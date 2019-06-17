@@ -1,24 +1,33 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
-import routes from './routes'
-
 Vue.use(VueRouter);
 
-const Router = new VueRouter({
-  /*
-   * NOTE! Change Vue Router mode from quasar.conf.js -> build -> vueRouterMode
-   *
-   * When going with "history" mode, please also make sure "build.publicPath"
-   * is set to something other than an empty string.
-   * Example: '/' instead of ''
-   */
+let routes = []
+/*Add here in order how do you want routes*/
+routes = require('./routes').default
+//routes = require('@imagina/quser/_router/routes').default
+//routes = require('@imagina/qblog/_router/routes').default
 
-  // Leave as is and change from quasar.conf.js instead!
+//Route 404
+routes.push({
+  path: '*',
+  component: require('../layouts/master').default,
+  children: [
+    {
+      path: '/',
+      component: require('../layouts/pages/404').default,
+      name: '404'
+    }
+  ]
+})
+
+const Router = new VueRouter({
+  scrollBehavior: () => ({ y: 0 }),
+  routes: routes,
+  // Leave these as they are and change from quasar.conf.js instead!
   mode: process.env.VUE_ROUTER_MODE,
   base: process.env.VUE_ROUTER_BASE,
-  scrollBehavior: () => ({ y: 0 }),
-  routes
 })
 
 export default Router

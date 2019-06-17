@@ -2,46 +2,49 @@
   <q-layout view="lHh LpR lFr">
 
     <!-- === HEADER === -->
-    <q-layout-header class="no-shadow">
-      <q-toolbar color="primary">
+<q-layout-header class="no-shadow">
+      <q-toolbar color="red-14">
         <!--= BUTTON MENU =-->
         <q-btn flat dense round @click="leftDrawerOpen = !leftDrawerOpen" aria-label="Menu">
           <q-icon name="menu"/>
         </q-btn>
 
+
         <!--= TITLE =-->
         <q-toolbar-title class="gt-xs">
-          IMAGINA
+          EN RED GROUP
         </q-toolbar-title>
+        
+        <router-link tag="span" class="float-right " style="cursor: pointer; ">
+                Mis Notas
+                
+        </router-link>
 
         <!--= FULLSCREEN =-->
         <q-btn flat dense
                class="desktop-only"
                :icon="$q.fullscreen.isActive ? 'fullscreen_exit' : 'fullscreen'"
                @click="toggleFullscreen()"></q-btn>
+       </q-toolbar>
 
-        <!--= DEPARTMENT SELECT =-->
-        <widget-user-department></widget-user-department>
-
-        <!--== USER DROPDOWN ==-->
-        <widget-user></widget-user>
-      </q-toolbar>
-
-    </q-layout-header>
-
+  </q-layout-header>
     <!-- === MENU === -->
     <q-layout-drawer id="menu_master"
                      v-model="leftDrawerOpen"
-                     :content-class="'bg-grey-2'"
+                     show-if-above
+          elevated
+          
+
     >
-      <q-list no-border link inset-delimiter>
+      <q-list no-border  inset-delimiter>
         <!-- === LOGO === -->
-        <q-list-header class="text-center">
+        <q-list-header class="text-center img-header">
           <router-link :to="{ name: 'home'}">
             <a>
               <img src="../assets/image/logo.png" width="80%">
             </a>
           </router-link>
+                 
         </q-list-header>
 
         <!--= MENU =-->
@@ -50,18 +53,10 @@
     </q-layout-drawer>
 
     <!-- === ROUTER VIEW === -->
-    <q-page-container>
+    <q-page-container class="bg-primary1">
       <router-view/>
     </q-page-container>
 
-    <!-- === FOOTER === -->
-    <q-layout-footer class="no-shadow">
-      <!--=== DATA LOGIN ===-->
-      <div class="q-body-1 q-py-sm q-px-lg text-center bg-grey-2">
-        <q-icon name="copyright"/>
-        Copyright FHIAProducts.com
-      </div>
-    </q-layout-footer>
 
     <!-- === BACK TO TOP === -->
     <q-page-sticky position="bottom-right" :offset="[18, 18]">
@@ -91,7 +86,7 @@
     },
     data() {
       return {
-        leftDrawerOpen: false,
+        leftDrawerOpen: true,
         drawerState: true,
       }
     },
@@ -103,32 +98,37 @@
   }
 </script>
 
-<style lang="stylus">
-  @import "~variables";
+<style>
+a:hover{
+  color: #EA0304;}
+.color-rojo{
+  color: #EA0304;}
 
-  #list_menu
-    .q-icon
-      font-size: 16px
-    .q-item-side
-      min-width 20px !important
+.bg-primary1{
+  background: #f1f1f1;
+}
+.img-header{
+  max-width: 290px;
+}
+.q-list .q-item {
+  padding: 30px 50px;
+  margin:auto;
+  font-size: 14px;
+  color: #959595;
 
-  .q-item-main
-    font-size: 15px !important
+}
+.separador{
+  border-bottom: 1px solid #C4C4C4;
+}
+.q-list .q-item:hover, 
+.q-list .q-item:focus,
+ .q-list .q-item:hover .q-item-side, 
+ .q-item:focus .q-item-side{
+  color: #EA0304;
+  background: #fff;
 
-  #menu_leads
-    .q-item
-      padding: 8px 0px
-
-  .q-item-side
-    min-width: auto
-
-  .border-content
-    border 2px solid $grey-4
-    border-radius 3px
-
-  .text_title
-    span
-      border-bottom 2px red solid
-
-
+}
+.q-item.active, .q-item.router-link-active, .q-item:focus{
+  background: #fff;
+}
 </style>

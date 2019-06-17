@@ -12,48 +12,46 @@
 
 export default {
   /*home*/
-  home: {
-    title: 'Home',
-    icon: 'fas fa-home',
-    to: 'home',
+  panel: {
+    title: 'Panel de Control',
+    icon: 'fas fa-th',
+    to: 'inicio',
+    separator: true,
   },
   /*User*/
-  user: {
-    title: 'Users',
-    icon: 'fas fa-users',
-    can: 'iprofile.api.user.permission',
-    children: [
-      {
-        title: 'Create',
-        icon: 'fas fa-user-plus',
-        to: 'user.users.create',
-        can: 'iprofile.api.user.create'
-      },
-      {
-        title: 'List/Search',
-        icon: 'fas fa-list-alt',
-        to: 'user.users.index',
-        can: 'iprofile.api.user.index'
-      },
-      {
-        title: 'My profile',
-        icon: 'fas fa-user-tie',
-        to: 'user.profile.me',
-      },
-      /*
-      {
-        title: 'Departments',
-        icon: 'fas fa-cubes',
-        to: 'user.department',
-        can: 'iprofile.api.user.deparment'
-      }
-      */
-    ]
+  mensajeria: {
+    title: 'Mensajeria',
+    icon: 'fas fa-comment-alt',
+    to: 'mensajeria',
+    patch:'/mensajeria',
+    separator: true,
+  },
+  noticias: {
+    title: 'Noticias',
+    icon: 'fas fa-newspaper',
+    to: 'noticias',
+    separator: false,
+  },
+  /*User*/
+  directorio: {
+    title: 'Directorio Corporativo',
+    icon: 'fas fa-address-card',
+    to: 'directorio',
+    separator: true,
+  },
+  calendario: {
+    title: 'Calendario eventos',
+    icon: 'fas fa-calendar-alt',
+    to: 'calendario',
+    separator: true,
   },
   /*logout*/
   logout: {
-    title: 'Sign out',
+    title: 'Cerrar Sesion',
     icon: 'fas fa-sign-out-alt',
     to: 'auth.logout'
   }
+
+
+
 }

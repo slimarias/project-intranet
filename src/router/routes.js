@@ -2,19 +2,36 @@ import Route from 'vue-routisan'
 import user from '@imagina/quser/_router/routes' //Routes module QUser
 import auth from '@imagina/quser/_router/middlewares/auth' //Middleware auth
 
-// Define path where your views are stored
-Route.setViewResolver(component => require('src/layouts/' + component).default)
+/*VIEWS*/
+import master from 'app/src/layouts/master'
+import blank from 'app/src/layouts/blank'
 
 
-Route.view('/', 'master')
-  .guard(auth)
+/*=============== Route Redirects ===========================*/
+Route.redirect('/', '/inicio');
+
+/*===================== Routes ============================*/
+/*Pages*/
+Route.view('/', master)
   .children(() => {
-      Route.view('/', 'pages/Index').options({
-        name: 'home'
+      Route.view('/inicio', require('../layouts/pages/inicio').default).options({
+        name: 'inicio'
+      }),
+      Route.view('/mensajeria', require('../layouts/pages/mensajeria').default).options({
+        name: 'mensajeria'
+      }),
+	
+		Route.view('/mensajeria', require('../layouts/pages/mensajeria').default).options({
+        name: 'mensajeria'
+      }),
+
+      
+       Route.view('/directorio', require('../layouts/pages/directorio').default).options({
+        name: 'directorio'
       })
+    
+
     }
   )
-
-Route.view('*', 'pages/404')//Route error 404
 
 export default Route.all()
