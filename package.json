@@ -11,6 +11,12 @@
     "test": "echo \"No test specified\" && exit 0"
   },
   "dependencies": {
+    "@fullcalendar/bootstrap": "^4.2.0",
+    "@fullcalendar/core": "^4.2.0",
+    "@fullcalendar/daygrid": "^4.2.0",
+    "@fullcalendar/interaction": "^4.2.0",
+    "@fullcalendar/timegrid": "^4.2.0",
+    "@fullcalendar/vue": "^4.2.2",
     "@imagina/qblog": "0.0.7",
     "@imagina/qcrud": "0.0.25",
     "@imagina/qhelper": "0.0.24",
@@ -19,7 +25,6 @@
     "@imagina/quser": "0.0.29",
     "axios": "^0.18.0",
     "dotenv": "^8.0.0",
-    "quasar-calendar": "^1.0.0-beta.1",
     "vue-carousel": "^0.18.0",
     "vue-i18n": "^7.3.3",
     "vue-routisan": "^2.1.4",

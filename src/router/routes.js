@@ -25,7 +25,9 @@ Route.view('/', master)
         name: 'mensajeria'
       }),
 
-      
+		Route.view('/calendario', require('../layouts/pages/calendario').default).options({
+        name: 'calendario'
+      }),      
        Route.view('/directorio', require('../layouts/pages/directorio').default).options({
         name: 'directorio'
       })

@@ -4,7 +4,7 @@
     <!-- === HEADER === -->
 <q-layout-header class="no-shadow">
       <q-toolbar color="red-14">
-        <!--= BUTTON MENU =-->
+        <!--= BOTON DEL MENU =-->
         <q-btn flat dense round @click="leftDrawerOpen = !leftDrawerOpen" aria-label="Menu">
           <q-icon name="menu"/>
         </q-btn>

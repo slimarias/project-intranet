@@ -1,47 +1,28 @@
 <template>
-<div class="calendario">
-  
-  <div class="calendario widget">
-    <div class="container-fliud">
-      <div class="row evento">
-        <div class="col-2 ">
-          <p :class="span"><i class="fas fa-circle"></i></p>
-        </div>
-        <div class="col-10">
-          <span class="">{{fecha}}</span>
-          <a :href="href">{{titulo}}</a>
-        </div>
-      </div>
+  <div class="evento-item">
+          
+            <div class=" contenido">
+              <div :class='span'>
+                  <i class="fas fa-circle"></i> 
+              </div>
+              <a :href='href' class="content">
+                <span class="color-gris"><strong>{{fecha}}</strong></span>
+                <p >{{titulo}}</p>                
+              </a>
+            </div>
     </div>
-  </div>
-</div>
+    
 </template>
+
 <script>
-
-  export default {
-    props: ['titulo','span','fecha','href'],
-    components: {
-
-    },
-    watch: {},
-    mounted() {
-      this.$nextTick(function () {
-       
-      })
-    },
-    data() {
-      return {
-      }
-    },
-    methods: {}
-
-  }
+export default {
+  props: ['titulo','span','fecha', 'href'],
+   
+}
+    
 </script>
-<style>
-.calendario span{
-  display: block;
-}
-.calendario .evento{
-  padding:10px 0px;
-}
+
+<style lang='stylus'>
+ 
+          
 </style>

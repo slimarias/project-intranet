@@ -3,11 +3,11 @@
 <div class=" noticias">
     
          <div class="container-fliud">
-           <div class="row noticia">
-              <div class="col-12 col-md-4 imagen  w-100">
+           <div class="row item-noticia">
+              <div class="col-4 imagen  w-100">
                 <img :src="imagen" width="100%" :alt="titulo">
               </div>
-              <div class="col-12 col-md-6 contenido">
+              <div class="col-6 contenido">
                 <a :href='href'><p>{{titulo}}</p>
                 <span>{{fecha}}</span></a>
               </div>
@@ -36,26 +36,24 @@
 
   }
 </script>
-<style>
-.color-rojo{
-  color: #EA0304;
-}
-.noticias{
-}
-.noticias .titulo{
-  padding: 10px 0px;
-  margin-bottom: 5px
-}
-.noticia{
-  display: flex;
-  align-items: center;
-
-}
-.noticia .contenido{
-  padding: 10px;
-}
-.noticia .imagen img{
-  max-height: 250px;
-}
-
+<style lang="stylus">
+.widget        
+  .noticia
+    .titulo 
+      padding-top: 0px
+      margin-bottom: 10px
+      padding-bottom: 15px
+    .item-noticia
+      display: flex
+      align-items:center
+      min-height: 90px
+      padding: 15px 0px
+      .contenido
+          padding-left: 10px;
+      .imagen
+        height:60px
+        width:70px
+        img
+          object-fit:cover;
+          height:100%   
 </style>
