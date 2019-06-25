@@ -89,72 +89,70 @@ export default {
 
 .directorio2
   margin-top:15px
-.directorio-item2
-      
-      margin-bottom: 20px;
-      
-    .widget  .q-item-link
+  .directorio-item2      
+    margin-bottom: 20px;
+    .datos-directorio   
+      text-align: justify
+      span
+        color: #959595
+        font-size: 10px
+        margin-bottom: 0px
+        display: block
+        padding-bottom: 5px
+      p
+        display: block   
+        i
           color: #EA0304
-          float:right
-          &:hover
-            background: none !important
-            color: #000
-     
-    .imagen 
-      margin-top:   15px
-      img
-        width: 100px
-        height: 100px
-        border-radius: 50%
-        margin-bottom: 5px
-
-
-       
-.datos-directorio 
-  text-align: justify
-  span
-          color: #959595
-          font-size: 10px
-          margin-bottom: 0px
-          display: block
-          padding-bottom: 5px
-   p
-        padding:15px 0px
-          display: block   
-    i
-      color: #EA0304
-      font-size: 15px
-    h2
+          font-size: 15px
+      h2
       .titulo
         padding-bottom:   15px
-      color: #666
-      widdth: 100%
-      display:block
-    .circulo  
-      display: flex
-      padding-top:  15px
-      .circulo-icon
-        margin-right:   0px
-        background: #EA0304
-        color: #fff
-        height: 16px
-        width: 16px
+        color: #666
+        widdth: 100%
+        display:block
+      .circulo  
         display: flex
-        align-items: center
-        justify-content: center
-        padding: 0px
-        border-radius: 50%
-        font-size: 10px
-        margin-right: 10px
-        i
-          font-size: 10px
+        padding-top:  15px
+        .circulo-icon
+          margin-right:   0px
+          background: #EA0304
           color: #fff
+          height: 16px
+          width: 16px
+          display: flex
+          align-items: center
+          justify-content: center
           padding: 0px
-          margin:0px
+          border-radius: 50%
+          font-size: 10px
+          margin-right: 10px
+          i
+            font-size: 10px
+            color: #fff
+            padding: 0px
+            margin:0px
       strong
         color: #666666
         font-size: 12px
         font-weight: bold
+
+    .q-item-link
+            color: #EA0304
+            float:right
+            &:hover
+              background: none !important
+              color: #000
+      .imagen 
+        margin-top:   15px
+        img
+          width: 100px
+          height: 100px
+          border-radius: 50%
+          margin-bottom: 5px
+
+
+       
+
 
 
 </style>

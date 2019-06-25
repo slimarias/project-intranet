@@ -75,7 +75,7 @@ export default {
     .titulo
       margin-bottom: 20px;
     .directorio-item
-      .q-item
+     .q-item-link
         justify-content: center;
         display: flex 
         color: #EA0304
