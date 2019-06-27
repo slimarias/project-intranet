@@ -15,7 +15,7 @@
             <div class="circulo"> 
                 <div  class="circulo-icon"><i class="fas fa-phone "></i></div>
              <div> <p><strong>Télefono: </strong>{{telefono}}</p>
- <p><strong>Ext. </strong>{{ext}}</p></div>
+          <p><strong>Ext. </strong>{{ext}}</p></div>
             </div>
             <div>
              

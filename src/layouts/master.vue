@@ -105,7 +105,7 @@ a:hover{
   color: #EA0304;}
 
 .bg-primary1{
-  background: #f1f1f1;
+  background: #F8F8F8;
 }
 .img-header{
   max-width: 290px;
