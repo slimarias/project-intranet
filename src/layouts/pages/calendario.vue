@@ -40,9 +40,6 @@
           :timeZone='UTC'
           :locale ="es-ES"
 
-    
-    dayNamesShort="['Dom','Lun','Mar','Mié','Jue','Vie','Sáb']"
-
           :buttonText="{
             dayGridMonth:'Mes',
             timeGridWeek:'Semana',

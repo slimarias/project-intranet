@@ -21,8 +21,12 @@ Route.view('/', master)
         name: 'mensajeria'
       }),
 	
-		Route.view('/mensajeria', require('../layouts/pages/mensajeria').default).options({
-        name: 'mensajeria'
+		Route.view('/noticias', require('../layouts/pages/noticias').default).options({
+        name: 'noticias'
+      }),
+
+    Route.view('/noticias/:noticiaId', require('../components/iblog/show').default).options({
+        name: 'noticias.show'
       }),
 
 		Route.view('/calendario', require('../layouts/pages/calendario').default).options({
@@ -31,6 +35,7 @@ Route.view('/', master)
        Route.view('/directorio', require('../layouts/pages/directorio').default).options({
         name: 'directorio'
       })
+
     
 
     }

@@ -45,12 +45,8 @@
   export default {
     components: {
       widgetDirectorio,
-    },
-    watch: {},
-    mounted() {
-      this.$nextTick(function () {
-       
-      })
+    
+    
     },
     data() {
       return {
