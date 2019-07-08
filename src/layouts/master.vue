@@ -15,14 +15,32 @@
           EN RED GROUP
         </q-toolbar-title>
         
-        <router-link tag="span" class="float-right " style="cursor: pointer; ">
-                Mis Notas
-                
-        </router-link>
+        <div class="btn-t">
+          <q-btn flat >
+          Mis Notas
+        </q-btn>
+
+
+        <q-btn flat round dense icon="fa fa-bell">
+          <q-chip floating round color="blue">2</q-chip>
+        </q-btn>
+
+        <q-btn round  color="white" dense round>
+          <q-icon name="fa fa-user" color="red-14"/>
+        </q-btn>
+
+        <q-btn flat >
+          Pedro Perez
+        </q-btn>
+        </div>
+
+
+
+
 
         <!--= FULLSCREEN =-->
-        <q-btn flat dense
-               class="desktop-only"
+        <q-btn  color="white"
+               class="desktop-only "
                :icon="$q.fullscreen.isActive ? 'fullscreen_exit' : 'fullscreen'"
                @click="toggleFullscreen()"></q-btn>
        </q-toolbar>
@@ -99,6 +117,17 @@
 </script>
 
 <style>
+.btn-t{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  
+}
+.btn-t button{
+  margin: 0px 5px;
+  padding: 0px;
+}
 a:hover{
   color: #EA0304;}
 .color-rojo{

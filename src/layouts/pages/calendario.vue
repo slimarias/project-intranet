@@ -183,6 +183,27 @@ color-bg= rgba(255,255,255,0.522)
   .fc-day-grid-event .fc-content span
     font-size: 10px
     color: #fff
+  
+  .fc-dayGridMonth-button:before,.fc-timeGridWeek-button:before,.fc-timeGridDay-button:before
+    font-size: 25px
+    color: color-rojo
+    width: 25px
+    height: 25px
+    font-weight: 900
+    font-family: FontAwesome
+    display: block
+    text-align:center
+    margin: auto
+    margin-bottom:15px
+    position: relative
+    
+  .fc-dayGridMonth-button:before
+    content: '\f00a'
+  .fc-timeGridWeek-button:before
+    content: '\f0db'
+  .fc-timeGridDay-button:before
+    content: '\f039'
+
   .fc-unthemed td.fc-today 
     background: color-bg
 

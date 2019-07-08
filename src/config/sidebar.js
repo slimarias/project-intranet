@@ -14,34 +14,34 @@ export default {
   /*home*/
   panel: {
     title: 'Panel de Control',
-    icon: 'fas fa-th',
+    icon: 'fa fa-th',
     to: 'inicio',
     separator: true,
   },
   /*User*/
   mensajeria: {
     title: 'Mensajeria',
-    icon: 'fas fa-comment-alt',
+    icon: 'fa fa-comment-alt',
     to: 'mensajeria',
     patch:'/mensajeria',
     separator: true,
   },
   noticias: {
     title: 'Noticias',
-    icon: 'fas fa-newspaper',
+    icon: 'fa fa-newspaper',
     to: 'noticias',
     separator: false,
   },
   /*User*/
   directorio: {
     title: 'Directorio Corporativo',
-    icon: 'fas fa-address-card',
+    icon: 'fa fa-address-card',
     to: 'directorio',
     separator: true,
   },
   calendario: {
     title: 'Calendario eventos',
-    icon: 'fas fa-calendar-alt',
+    icon: 'fa fa-calendar-alt',
     to: 'calendario',
     separator: true,
   },
