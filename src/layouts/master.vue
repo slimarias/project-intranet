@@ -1,163 +1,94 @@
 <template>
-  <q-layout view="lHh LpR lFr">
+  <q-layout view="lHh LpR lFr" v-if="$store.state.app.active">
+    <!-- HEADER -->
+    <admin-header v-if="appIsBackend" />
+    <frontend-header v-else />
 
-    <!-- === HEADER === -->
-<q-layout-header class="no-shadow">
-      <q-toolbar color="red-14">
-        <!--= BOTON DEL MENU =-->
-        <q-btn flat dense round @click="leftDrawerOpen = !leftDrawerOpen" aria-label="Menu">
-          <q-icon name="menu"/>
-        </q-btn>
-
-
-        <!--= TITLE =-->
-        <q-toolbar-title class="gt-xs">
-          EN RED GROUP
-        </q-toolbar-title>
-        
-        <div class="btn-t">
-          <q-btn flat >
-          Mis Notas
-        </q-btn>
-
-
-        <q-btn flat round dense icon="fa fa-bell">
-          <q-chip floating round color="blue">2</q-chip>
-        </q-btn>
-
-        <q-btn round  color="white" dense round>
-          <q-icon name="fa fa-user" color="red-14"/>
-        </q-btn>
-
-        <q-btn flat >
-          Pedro Perez
-        </q-btn>
-        </div>
-
-
-
-
-
-        <!--= FULLSCREEN =-->
-        <q-btn  color="white"
-               class="desktop-only "
-               :icon="$q.fullscreen.isActive ? 'fullscreen_exit' : 'fullscreen'"
-               @click="toggleFullscreen()"></q-btn>
-       </q-toolbar>
-
-  </q-layout-header>
-    <!-- === MENU === -->
-    <q-layout-drawer id="menu_master"
-                     v-model="leftDrawerOpen"
-                     show-if-above
-          elevated
-          
-
-    >
-      <q-list no-border  inset-delimiter>
-        <!-- === LOGO === -->
-        <q-list-header class="text-center img-header">
-          <router-link :to="{ name: 'home'}">
-            <a>
-              <img src="../assets/image/logo.png" width="80%">
-            </a>
-          </router-link>
-                 
-        </q-list-header>
-
-        <!--= MENU =-->
-        <widget-menu></widget-menu>
-      </q-list>
-    </q-layout-drawer>
-
-    <!-- === ROUTER VIEW === -->
-    <q-page-container class="bg-primary1">
+    <!-- ROUTER VIEW -->
+    <q-page-container>
       <router-view/>
     </q-page-container>
 
-
-    <!-- === BACK TO TOP === -->
-    <q-page-sticky position="bottom-right" :offset="[18, 18]">
-      <q-btn
-        v-back-to-top.animate="{offset: 500, duration: 200}"
-        round
-        color="primary"
-        icon="keyboard_arrow_up"
-      />
-    </q-page-sticky>
-
+    <!-- FOOTER -->
+    <admin-footer v-if="appIsBackend" />
+    <frontend-footer v-else />
   </q-layout>
 </template>
 
 <script>
-  import WidgetUser from "@imagina/quser/_components/widget-user";
-  import WidgetUserDepartment from "@imagina/quser/_components/widget-user-department";
-  import widgetMenu from "src/components/menu/widget-menu";
+  /*Components*/
+  import adminHeader from 'src/components/master/admin/header'
+  import adminFooter from 'src/components/master/admin/footer'
+  import frontendHeader from 'src/components/master/frontend/header'
+  import frontendFooter from 'src/components/master/frontend/footer'
+
+  //Services
+  import appServices from 'src/services/application/index'
 
   export default {
+    meta() {
+      let routetitle = ((this.$route.meta && this.$route.meta.title) ? this.$route.meta.title : '')
+      let siteName = this.$store.getters['qsiteSettings/getSettingValueByName']('core::site-name')
+      let iconHref = this.$store.getters['qsiteSettings/getSettingMediaByName']('isite::favicon').path
+      return {
+        title: `${siteName} | ${this.$tr(routetitle)}`,
+        link: [{rel: 'icon', href: iconHref, id: 'icon'}],
+      }
+    },
+    beforeRouteLeave(to, from, next) {
+      next()
+    },
     components: {
-      widgetMenu,
-      WidgetUserDepartment,
-      WidgetUser},
+      adminHeader, adminFooter,
+      frontendHeader, frontendFooter
+    },
     mounted() {
-      this.$nextTick(function () {})
+      this.$nextTick(async function () {
+        //Call to config when is mounted
+        let params = this.$route.params
+      })
     },
     data() {
       return {
-        leftDrawerOpen: true,
-        drawerState: true,
+        appIsBackend: config('app.isBackend')
       }
     },
+    computed: {
+      showApp() {
+        return this.$store.state.app.show
+      },
+    },
     methods: {
-      toggleFullscreen() {
-        this.$q.fullscreen.toggle()
+      isInStandaloneMode() {
+        (window.matchMedia('(display-mode: standalone)').matches) || (window.navigator.standalone);
       },
     }
   }
 </script>
 
-<style>
-.btn-t{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+<style lang="stylus">
+  @import "~variables";
 
-  
-}
-.btn-t button{
-  margin: 0px 5px;
-  padding: 0px;
-}
-a:hover{
-  color: #EA0304;}
-.color-rojo{
-  color: #EA0304;}
+  #list_menu
+    .q-icon
+      font-size: 16px
 
-.bg-primary1{
-  background: #F8F8F8;
-}
-.img-header{
-  max-width: 290px;
-}
-.q-list .q-item {
-  padding: 30px 50px;
-  margin:auto;
-  font-size: 14px;
-  color: #959595;
+    .q-item-side
+      min-width 20px !important
 
-}
-.separador{
-  border-bottom: 1px solid #C4C4C4;
-}
-.q-list .q-item:hover, 
-.q-list .q-item:focus,
- .q-list .q-item:hover .q-item-side, 
- .q-item:focus .q-item-side{
-  color: #EA0304;
-  background: #fff;
+  .q-item-main
+    font-size: 15px !important
 
-}
-.q-item.active, .q-item.router-link-active, .q-item:focus{
-  background: #fff;
-}
+  #menu_leads
+    .q-item
+      padding: 8px 0px
+
+  .q-item-side
+    min-width: auto
+
+  .border-content
+    border 2px solid $grey-4
+    border-radius 3px
+
+
 </style>

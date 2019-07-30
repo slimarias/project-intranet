@@ -1,13 +1,14 @@
 import { findValue } from 'src/utils'
-import api from './api'
-import sidebar from  './sidebar'
-import auth from '@imagina/quser/_config/auth'; //Import this file
 
 export default function (value = '', fallback = null) {
+
   const values = {
-    api,
-    sidebar,
-    auth
-  };
+    pages : require('src/config/pages/index').default,
+    apiRoutes : require('src/config/apiRoutes/index').default,
+    sidebar : require('src/config/sidebar').default,
+    auth : require('@imagina/quser/_config/auth').default,
+    app : require('src/config/app').default//Get config APP,
+  }
+
   return findValue(value, values) || fallback
 }

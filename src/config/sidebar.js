@@ -1,57 +1,46 @@
-/**
- * Config for items in Menu
- */
+const pages = config('pages') // Get Pages from config
+const appConfig = config('app')
 
-/*
-*{
-  title: 'Assignment',
-  icon: 'fas fa-users-cog',
-  to: 'user.users.assignment',
-  can:'user.users.index'
-},*/
+//Autoload sidebars of modules
+//Not edit
+let localSidebar = []//Response
 
-export default {
-  /*home*/
-  panel: {
-    title: 'Panel de Control',
-    icon: 'fa fa-th',
-    to: 'inicio',
-    separator: true,
-  },
-  /*User*/
-  mensajeria: {
-    title: 'Mensajeria',
-    icon: 'fa fa-comment-alt',
-    to: 'mensajeria',
-    patch:'/mensajeria',
-    separator: true,
-  },
-  noticias: {
-    title: 'Noticias',
-    icon: 'fa fa-newspaper',
-    to: 'noticias',
-    separator: false,
-  },
-  /*User*/
-  directorio: {
-    title: 'Directorio Corporativo',
-    icon: 'fa fa-address-card',
-    to: 'directorio',
-    separator: true,
-  },
-  calendario: {
-    title: 'Calendario eventos',
-    icon: 'fa fa-calendar-alt',
-    to: 'calendario',
-    separator: true,
-  },
-  /*logout*/
-  logout: {
-    title: 'Cerrar Sesion',
-    icon: 'fas fa-sign-out-alt',
-    to: 'auth.logout'
-  }
-
-
-
+if (appConfig.isBackend) {
+  let modules = appConfig.modules
+  modules.forEach((name) => {
+    try {
+      let moduleSidebar = require(`@imagina/${name}/_config/sidebar`).default
+      if (moduleSidebar && moduleSidebar[0]) {
+        localSidebar = localSidebar.concat(moduleSidebar)
+      }
+    } catch (e) {
+    }
+  })
 }
+
+
+//Add extra items to sidebar
+/*Example group item. April 04, 2019
+{
+	title: "title",
+	icon: "fas fa-icon",
+	children: [
+    pages.groupPage.pageName, //Single Item in group items
+    {//Sub group into group pages
+      title: 'title',
+      icon: 'fas fa-icon',
+      children: [
+        pages.groupPage.pageName, //Single Item in group items
+      ]
+    },
+  ]
+}
+*/
+
+//Add items tu sidebar
+let sidebar = [
+  pages.app.home,//Home
+]
+
+//Return merge between local sidebar and sidebar of qMenu
+export default sidebar.concat(localSidebar)

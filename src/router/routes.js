@@ -1,44 +1,43 @@
 import Route from 'vue-routisan'
-import user from '@imagina/quser/_router/routes' //Routes module QUser
-import auth from '@imagina/quser/_router/middlewares/auth' //Middleware auth
+import configMiddleware from 'src/router/middlewares/config'
 
-/*VIEWS*/
-import master from 'app/src/layouts/master'
-import blank from 'app/src/layouts/blank'
+//Create all routes from pages
+const pages = config('pages')//Get pages from config
 
+//Redirect
+Route.redirect('/', pages.app.home.path);
 
-/*=============== Route Redirects ===========================*/
-Route.redirect('/', '/inicio');
+for (var nameGroupPage in pages) {
+  let groupPages = pages[nameGroupPage]//Get group pages
+  //Loop group pages
+  if (Object.keys(groupPages).length) {
+    for (var namePage in groupPages) {
+      let page = groupPages[namePage]//Get page
+      let middlewares = (page.middleware ? page.middleware : [])
+      middlewares.push(configMiddleware) //Set middleware config
 
-/*===================== Routes ============================*/
-/*Pages*/
-Route.view('/', master)
-  .children(() => {
-      Route.view('/inicio', require('../layouts/pages/inicio').default).options({
-        name: 'inicio'
-      }),
-      Route.view('/mensajeria', require('../layouts/pages/mensajeria').default).options({
-        name: 'mensajeria'
-      }),
-	
-		Route.view('/noticias', require('../layouts/pages/noticias').default).options({
-        name: 'noticias'
-      }),
-
-    Route.view('/noticias/:noticiaId', require('../components/iblog/show').default).options({
-        name: 'noticias.show'
-      }),
-
-		Route.view('/calendario', require('../layouts/pages/calendario').default).options({
-        name: 'calendario'
-      }),      
-       Route.view('/directorio', require('../layouts/pages/directorio').default).options({
-        name: 'directorio'
-      })
-
-    
-
+      if (page.activated) {//Check if page is activated
+        //Create Route
+        Route.view('/', page.containerLayout)
+          .children(() => {
+            Route.view(page.path, page.layout).options({
+              name: page.name,
+              meta: {
+                permission: (page.permission ? page.permission : null),
+                title : page.title,
+                icon : page.icon
+              },
+              guard: middlewares,
+              props: (route) => {
+                let propsData = page.props ? page.props : {}
+                propsData.parentId = route.params.parentId || null
+                return propsData
+              },
+            });
+          })
+      }
     }
-  )
+  }
+}
 
 export default Route.all()
