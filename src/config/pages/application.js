@@ -17,7 +17,7 @@ export default {
 		layout: require('src/layouts/index').default,
 		containerLayout: master,
 		title: 'sidebar.pageHome',
-		icon: 'fas fa-home',
+		icon: 'fa fa-th',
 		middleware: [auth]
 	},
 	//Config Page
@@ -31,6 +31,62 @@ export default {
 		title: 'sidebar.pageConfig',
 		icon: 'fas fa-home',
 	},
+  // Custom pages
+  calendary: {
+    permission: null,
+    activated: true,
+    path: '/calendary',
+    name: 'app.calendary',
+    layout: require('src/layouts/pages/calendary').default,
+    containerLayout: master,
+    title: 'sidebar.calendary',
+    icon: 'fa fa-calendar-alt',
+    middleware: [auth]
+  },
+  directory: {
+    permission: null,
+    activated: true,
+    path: '/directory',
+    name: 'app.directory',
+    layout: require('src/layouts/pages/directory').default,
+    containerLayout: master,
+    title: 'sidebar.directory',
+    icon: 'fa fa-address-card',
+    middleware: [auth]
+  },
+  messenger: {
+    permission: null,
+    activated: true,
+    path: '/messenger',
+    name: 'app.messenger',
+    layout: require('src/layouts/pages/messenger').default,
+    containerLayout: master,
+    title: 'sidebar.messenger',
+    icon: 'fa fa-comment-alt',
+    middleware: [auth]
+  },
+  news:{
+    permission: null,
+    activated: true,
+    path: '/news',
+    name: 'app.news',
+    layout: require('src/layouts/pages/news').default,
+    containerLayout: master,
+    title: 'sidebar.news',
+    icon: 'fa fa-newspaper',
+    middleware: [auth]
+  },
+  new:{
+    permission: null,
+    activated: true,
+    path: '/news/:categoryId',
+    name: 'app.new',
+    layout: require('src/layouts/pages/new').default,
+    containerLayout: master,
+    title: 'sidebar.news',
+    icon: 'fa fa-newspaper',
+    middleware: [auth]
+  },
 	//Not found Page
 	notFound: {
 		permission: null,

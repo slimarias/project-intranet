@@ -40,6 +40,10 @@ if (appConfig.isBackend) {
 //Add items tu sidebar
 let sidebar = [
   pages.app.home,//Home
+  pages.app.messenger,
+  pages.app.news,
+  pages.app.directory,
+  pages.app.calendary,
 ]
 
 //Return merge between local sidebar and sidebar of qMenu

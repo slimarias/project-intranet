@@ -63,7 +63,8 @@ export default {
     home : 'Inicio',
     find : 'Buscar',
     user : 'Usuario',
-    impersonate : 'Suplantar'
+    impersonate : 'Suplantar',
+    viewProfile: 'Ver Peril',
   },
   message: {
     notFound: 'Lo sentimos, no hay nada aquí',

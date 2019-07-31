@@ -63,7 +63,8 @@ export default {
     home : 'Home',
     find : 'Find',
     user : 'User',
-    impersonate : 'Impersonate'
+    impersonate : 'Impersonate',
+    viewProfile: 'Profile',
   },
   message: {
     notFound: 'Sorry, nothing here',

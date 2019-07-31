@@ -12,11 +12,11 @@ export default {
     'qcrud',
     'quser',
     'qblog',
-    'qcommerce',
-    'qplace',
-    'qmenu',
+    //'qcommerce',
+    //'qplace',
+    //'qmenu',
     'qmedia',
-    'qslider',
+    //'qslider',
     'qsite'
   ],
   //Storage

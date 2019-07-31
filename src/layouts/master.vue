@@ -1,5 +1,5 @@
 <template>
-  <q-layout view="lHh LpR lFr" v-if="$store.state.app.active">
+  <q-layout view="lHh LpR lFr" v-if="$store.state.app.active" style="background: #F8F8F8;">
     <!-- HEADER -->
     <admin-header v-if="appIsBackend" />
     <frontend-header v-else />
