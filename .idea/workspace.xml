@@ -2,32 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c83755af-fec3-4f30-b4b7-e3256bbc249b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/qblog/grid-posts.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/qblog/list-categories.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/qblog/widgets/posts.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/qevent/event.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/qevent/gridCalendar.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/qevent/widgets/events.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/quser/userProfile.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/quser/userProfileModal.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/quser/widgets/users.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/layouts/pages/calendary.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/layouts/pages/directory.vue" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/layouts/pages/messenger.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/layouts/pages/new.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/layouts/pages/news.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/pages/application.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/pages/application.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/sidebar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/sidebar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/i18n/en-us/sidebar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/i18n/en-us/sidebar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/i18n/en-us/ui.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/i18n/en-us/ui.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/i18n/es/sidebar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/i18n/es/sidebar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/i18n/es/ui.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/i18n/es/ui.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/master.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/master.vue" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,8 +21,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/quser/widgets/users.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="24" column="16" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
+            <state relative-caret-position="264">
+              <caret line="11" column="34" lean-forward="true" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
               <folding>
                 <element signature="n#style#0;n#q-scroll-area#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
               </folding>
@@ -271,7 +247,7 @@
       <workItem from="1557530372494" duration="720000" />
       <workItem from="1564408321695" duration="754000" />
       <workItem from="1564502790239" duration="16793000" />
-      <workItem from="1564582049659" duration="24301000" />
+      <workItem from="1564582049659" duration="24544000" />
     </task>
     <task id="LOCAL-00001" summary=" + Update base to new base app v1.0">
       <created>1564502930197</created>
@@ -287,11 +263,32 @@
       <option name="project" value="LOCAL" />
       <updated>1564503000561</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary=" + Add dashboard&#10; + Add directory view">
+      <created>1564613163784</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1564613163784</updated>
+    </task>
+    <task id="LOCAL-00004" summary=" + Add calendary view without service in backend">
+      <created>1564613241626</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1564613241626</updated>
+    </task>
+    <task id="LOCAL-00005" summary=" + Add view news and new">
+      <created>1564613280836</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1564613280836</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43226000" />
+    <option name="totallyTimeSpent" value="43469000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="-321" width="1936" height="1056" extended-state="6" />
@@ -324,7 +321,10 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value=" + Update base to new base app v1.0" />
     <MESSAGE value=" + Update readme" />
-    <option name="LAST_COMMIT_MESSAGE" value=" + Update readme" />
+    <MESSAGE value=" + Add dashboard&#10; + Add directory view" />
+    <MESSAGE value=" + Add calendary view without service in backend" />
+    <MESSAGE value=" + Add view news and new" />
+    <option name="LAST_COMMIT_MESSAGE" value=" + Add view news and new" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/config/app.js">
@@ -651,8 +651,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/quser/widgets/users.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="24" column="16" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
+        <state relative-caret-position="264">
+          <caret line="11" column="34" lean-forward="true" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
           <folding>
             <element signature="n#style#0;n#q-scroll-area#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
           </folding>
