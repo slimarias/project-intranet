@@ -76,10 +76,21 @@ export default {
     icon: 'fa fa-newspaper',
     middleware: [auth]
   },
-  new:{
+  newsByCategory:{
     permission: null,
     activated: true,
     path: '/news/:categoryId',
+    name: 'app.news.category',
+    layout: require('src/layouts/pages/news').default,
+    containerLayout: master,
+    title: 'sidebar.news',
+    icon: 'fa fa-newspaper',
+    middleware: [auth]
+  },
+  new:{
+    permission: null,
+    activated: true,
+    path: '/new/:newId',
     name: 'app.new',
     layout: require('src/layouts/pages/new').default,
     containerLayout: master,

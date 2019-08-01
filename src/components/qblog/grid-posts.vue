@@ -1,55 +1,50 @@
 <template>
-  <div class="row relative-position">
-    <q-card
-      class="col-4 no-shadow q-px-md q-mb-xl"
-      v-for="(item, index) in news"
-      :key="index">
-      <q-card-media>
-        <div
-          class="product-img"
-          :style="`background-image: url(${item.options.mainimage});`">
-        </div>
-      </q-card-media>
-      <q-card-title>
-        {{item.title}}
-        <span
-          slot="subtitle">
-          {{$trd(item.createdAt)}}
-        </span>
-      </q-card-title>
-    </q-card>
-    <inner-loading :visible="visible"/>
-  </div>
+    <q-scroll-area style=" height: 700px;">
+      <div class="row">
+      <q-card
+        class="col-4 no-shadow q-px-md q-mb-xl"
+        v-for="(item, index) in news"
+        :key="index">
+        <q-card-media>
+          <div
+            @click="handlerClick(item)"
+            class="product-img pointer"
+            :style="`background-image: url(${item.options.mainimage});`">
+          </div>
+        </q-card-media>
+        <q-card-title>
+          {{item.title}}
+          <span
+            slot="subtitle">
+            {{$trd(item.createdAt)}}
+          </span>
+        </q-card-title>
+      </q-card>
+      </div>
+    </q-scroll-area>
+  
 </template>
 
 <script>
   export default {
-    data() {
-      return{
-        visible: false,
-        news: []
+    props:{
+      news:{
+        type:Array,
+        default:()=>[]
       }
     },
-    created() {
-      this.getNews(false)
+    data() {
+      return{
+      }
     },
     methods: {
-      getNews(refresh){
-        this.visible = true
-        let params = {
-          refresh: refresh,
-          params: {
-          },
-        }
-        this.$crud.index('apiRoutes.qblog.posts', params)
-          .then( response =>{
-            this.news = response.data
-            this.visible = false
-          })
-          .catch( error => {
-            this.$alert.error({message : 'Error', timeOut : 4000})
-            this.visible = false
-          })
+      handlerClick(item){
+        this.$router.push({
+          name: 'app.new',
+          params:{
+            newId: item.id
+          }
+        })
       }
     }
   }
@@ -63,4 +58,7 @@
     background-size cover
     height 300px
     border 1px solid #dddddd52
+  
+  .pointer
+    cursor pointer
 </style>

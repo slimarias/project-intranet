@@ -1,14 +1,18 @@
 <template>
-  <div>
-    <recursiveItem :menu="categories"/>
+  <div class="relative-position">
+    <listCategoriesChildren
+      :items="categories"/>
+    <inner-loading
+      :visible="visible"/>
   </div>
 </template>
 
 <script>
-  import recursiveItem from 'src/components/master/recursiveItem'
+  import listCategoriesChildren from 'src/components/qblog/list-categories-children'
   export default {
+    name:'listCategories',
     components:{
-      recursiveItem
+      listCategoriesChildren
     },
     data(){
       return{
@@ -29,7 +33,7 @@
         this.$crud.index('apiRoutes.qblog.categories', params)
           .then( response =>{
             //this.$helper.array.builTree
-            this.categories = this.orderCategoriesToMenu(response.data)
+            this.categories = response.data
             this.visible = false
           })
           .catch( error => {
@@ -39,7 +43,7 @@
       },
       orderCategoriesToMenu(categories){
         return categories.map( category => {
-          return {
+          let response = {
             title: category.title ? category.title : category.label,
             name: 'app.new',
             params: {categoryId: category.id},
@@ -47,6 +51,10 @@
             activated: true,
             parentId: category.parentId,
           }
+          if (category.children !== null){
+            response.children = this.orderCategoriesToMenu(category.children)
+          }
+          return response
         })
       }
     }
