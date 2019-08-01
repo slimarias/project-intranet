@@ -43,7 +43,7 @@
     </div>
     <div
       class="flex flex-center q-mt-md"
-      v-if="table.pagination.page > 1">
+      v-if="table.pagination.lastPage > 1">
       <q-pagination
         direction-links
         class="col-12 text-center"
@@ -104,6 +104,7 @@
             filter: Object.assign({}, this.table.filter, this.table.filters),
             page: pagination.page,
             take: pagination.rowsPerPage,
+            include: 'addresses,fields'
           }
         }
         this.$crud.index('apiRoutes.quser.users', params)

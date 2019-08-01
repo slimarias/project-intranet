@@ -12,31 +12,53 @@
             Directorio Corporativo
           </q-list-header>
           <q-item-separator />
-          <q-item/>
+          <q-item />
             <div class="row">
               <div
                 class="col-3 text-center q-mb-xl"
                 v-for="(item, index) in users"
                 :key="index">
-                <img :src="getUrlImg(item.smallImage)" class="custom-avatar">
-                <div class="q-subheading" align="center">{{item.fullName}}</div>
-                <q-btn inverted label="Ver Pefil" color="primary" flat no-caps/>
+                <img
+                  style="cursor: pointer;"
+                  @click="openModal = true; userSelected = item"
+                  :src="getUrlImg(item.smallImage)"
+                  class="custom-avatar">
+                <div
+                  class="q-subheading"
+                  align="center">{{item.fullName}}
+                </div>
+                <q-btn
+                  @click="openModal = true; userSelected = item"
+                  inverted
+                  :label="$tr('ui.label.viewProfile')"
+                  color="primary"
+                  flat no-caps/>
               </div>
           </div>
         </q-list>
       </q-scroll-area>
       <inner-loading :visible="visible"/>
+      <userProfileModal
+        :user="userSelected"
+        :opened="openModal"
+        @closeModal="openModal = false"/>
     </div>
   </div>
 </template>
 
 <script>
+  import userProfileModal from 'src/components/quser/userProfileModal'
   export default {
+    components:{
+      userProfileModal
+    },
     props:{
     
     },
     data(){
       return{
+        userSelected:{},
+        openModal:false,
         visible: false,
         users:[]
       }
@@ -50,6 +72,7 @@
         let params = {
           refresh: refresh,
           params: {
+            include: 'addresses,fields'
           }
         }
         this.$crud.index('apiRoutes.quser.users', params)

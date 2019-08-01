@@ -13,7 +13,7 @@
               {{user.fullName}}
             </div>
             <div class="text-primary q-body-1 q-mt-sm">
-              <b>Cargo: </b>Lorem ipsum
+              <b>Cargo: </b> Lorem ipsum
             </div>
             <div>
               <q-list no-border >
@@ -25,10 +25,10 @@
                   </q-item-side>
                   <q-item-main>
                     <q-item-tile label>
-                      <b>{{$tr('ui.form.phone')}}:</b> 321654987
+                      <b>{{$tr('ui.form.phone')}}:</b>
                     </q-item-tile>
                     <q-item-tile sublabel>
-                      <b>Ext: </b> 123
+                      {{getPhone(user.fields).value}}
                     </q-item-tile>
                   </q-item-main>
                 </q-item>
@@ -74,6 +74,15 @@
     methods:{
       getUrlImg(uri){
         return `${config('apiRoutes.api.base_url')}/${uri}`
+      },
+      getPhone(fields){
+        if (!fields.length){
+          return {value: this.$tr('ui.message.notFound')}
+        }
+        return fields.find(field => {
+          let response = field.name == 'cellularPhone'
+          return response
+        })
       }
     }
   }

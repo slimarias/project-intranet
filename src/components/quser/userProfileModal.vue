@@ -45,10 +45,10 @@
                 </q-item-side>
                 <q-item-main>
                   <q-item-tile label>
-                    <b>{{$tr('ui.form.phone')}}:</b> 321654987
+                    <b>{{$tr('ui.form.phone')}}:</b>
                   </q-item-tile>
                   <q-item-tile sublabel>
-                    <b>Ext: </b> 123
+                    {{getPhone(user.fields).value}}
                   </q-item-tile>
                 </q-item-main>
               </q-item>
@@ -80,7 +80,14 @@
                     <b>{{$tr('ui.form.address')}}:</b>
                   </q-item-tile>
                   <q-item-tile sublabel>
-                    Lorem ipsum
+                    <div v-if="user.addresses.length">
+                      <span v-for="(address, index) in user.addresses" :key="index">
+                        {{address.address1}}, {{address.city}}, {{address.state}}, {{address.country}}. <br>
+                      </span>
+                    </div>
+                    <div v-else>
+                      {{$tr('ui.message.notFound')}}
+                    </div>
                   </q-item-tile>
                 </q-item-main>
               </q-item>
@@ -112,6 +119,14 @@
     methods: {
       getUrlImg(uri){
         return `${config('apiRoutes.api.base_url')}/${uri}`
+      },
+      getPhone(fields){
+        if (!fields.length){
+          return {value: this.$tr('ui.message.notFound')}
+        }
+        return fields.find(field => {
+          return field.name == 'cellularPhone'
+        })
       }
     }
   }
