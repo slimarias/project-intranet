@@ -13,7 +13,7 @@
           </q-list-header>
           <q-item-separator />
           <q-item />
-            <div class="row">
+            <div class="row" v-if="users">
               <div
                 class="col-3 text-center q-mb-xl"
                 v-for="(item, index) in users"
@@ -60,7 +60,7 @@
         userSelected:{},
         openModal:false,
         visible: false,
-        users:[]
+        users:false
       }
     },
     created(){

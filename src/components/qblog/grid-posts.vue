@@ -16,7 +16,7 @@
           {{item.title}}
           <span
             slot="subtitle">
-            {{$trd(item.createdAt)}}
+            <b>{{$trd(item.createdAt)}}</b>
           </span>
         </q-card-title>
       </q-card>

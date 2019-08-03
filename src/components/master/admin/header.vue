@@ -43,7 +43,7 @@
     <!-- MENU -->
     <q-layout-drawer id="menu_master"
                      v-model="drawer.menu"
-                     :content-class="'bg-grey-2'"
+                     :content-class="'bg-white'"
     >
       <q-list no-border link inset-delimiter>
         <!-- === LOGO === -->

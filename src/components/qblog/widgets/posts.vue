@@ -17,7 +17,9 @@
           :key="index">
           <q-item-side>
             <q-item-tile>
-              <div class="product-img"
+              <div
+                @click="handlerClick(item)"
+                class="product-img pointer"
                 :style="`background-image: url(${item.options.mainimage});`">
               </div>
             </q-item-tile>
@@ -64,6 +66,14 @@
         .catch( error => {
           this.$alert.error({message : 'Error', timeOut : 4000})
           this.visible = false
+        })
+      },
+      handlerClick(item){
+        this.$router.push({
+          name: 'app.new',
+          params:{
+            newId: item.id
+          }
         })
       }
     }

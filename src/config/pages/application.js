@@ -54,17 +54,6 @@ export default {
     icon: 'fa fa-address-card',
     middleware: [auth]
   },
-  messenger: {
-    permission: null,
-    activated: true,
-    path: '/messenger',
-    name: 'app.messenger',
-    layout: require('src/layouts/pages/messenger').default,
-    containerLayout: master,
-    title: 'sidebar.messenger',
-    icon: 'fa fa-comment-alt',
-    middleware: [auth]
-  },
   news:{
     permission: null,
     activated: true,

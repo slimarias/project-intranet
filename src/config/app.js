@@ -10,6 +10,7 @@ export default {
   modules : [
     'qhelper',
     'qcrud',
+    'qchat',
     'quser',
     'qblog',
     //'qcommerce',
@@ -17,7 +18,8 @@ export default {
     //'qmenu',
     'qmedia',
     //'qslider',
-    'qsite'
+    'qsite',
+
   ],
   //Storage
   saveStorage : {

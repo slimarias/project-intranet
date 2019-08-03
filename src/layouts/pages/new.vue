@@ -10,7 +10,7 @@
         <div class="row">
           <div class="col-md-12 q-px-lg  q-py-lg">
             <div
-              class="product-img pointer"
+              class="product-img"
               :style="`background-image: url(${post.options.mainimage});`">
             </div>
           </div>

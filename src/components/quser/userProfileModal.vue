@@ -48,7 +48,7 @@
                     <b>{{$tr('ui.form.phone')}}:</b>
                   </q-item-tile>
                   <q-item-tile sublabel>
-                    {{getPhone(user.fields).value}}
+                  {{getPhone(user.fields, 'cellularPhone').value}}
                   </q-item-tile>
                 </q-item-main>
               </q-item>
@@ -80,7 +80,7 @@
                     <b>{{$tr('ui.form.address')}}:</b>
                   </q-item-tile>
                   <q-item-tile sublabel>
-                    <div v-if="user.addresses.length">
+                    <div v-if="user.addresses && user.addresses.length > 0 ">
                       <span v-for="(address, index) in user.addresses" :key="index">
                         {{address.address1}}, {{address.city}}, {{address.state}}, {{address.country}}. <br>
                       </span>
@@ -105,7 +105,10 @@
     props:{
       user:{
         type:Object,
-        default: ()=>{}
+        default: ()=>({
+          fields: [],
+          addresses: []
+        })
       },
       opened:{
         type: Boolean,
@@ -120,13 +123,14 @@
       getUrlImg(uri){
         return `${config('apiRoutes.api.base_url')}/${uri}`
       },
-      getPhone(fields){
-        if (!fields.length){
-          return {value: this.$tr('ui.message.notFound')}
+      getPhone(fields, criteria){
+        if (fields && fields.length > 0 ){
+          return fields.find(field => {
+            return field.name == criteria
+          })
         }
-        return fields.find(field => {
-          return field.name == 'cellularPhone'
-        })
+        return {
+          value: this.$tr('ui.message.notFound')}
       }
     }
   }
