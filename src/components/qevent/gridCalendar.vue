@@ -12,7 +12,7 @@
       @dateClick="handleDateClick"
       :plugins="calendarPlugins"
       :weekends="calendarWeekends"
-      :events="[]"
+      :events="dataCalendar"
       timeZone='UTC'
       locale ="es-ES"
       :buttonText="{
