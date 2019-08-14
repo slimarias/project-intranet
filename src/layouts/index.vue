@@ -1,7 +1,9 @@
 <template>
   <div class="row">
     <div class="col-md-4">
-      <news/>
+      <news
+        :shadowVisible="true"
+        :titleVisible="true"/>
     </div>
     <div class="col-md-8">
       <div class="row">
