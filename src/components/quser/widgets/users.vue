@@ -1,7 +1,7 @@
 <template>
   <div class="row q-mx-md q-my-md custom-shadow bg-white">
     <div class="col-md-12  relative-position">
-      <q-scroll-area style="height: 415px;">
+      
         <q-list no-border	>
           <q-list-header>
             <q-icon
@@ -36,7 +36,7 @@
               </div>
           </div>
         </q-list>
-      </q-scroll-area>
+      
       <inner-loading :visible="visible"/>
       <userProfileModal
         :user="userSelected"
@@ -64,14 +64,17 @@
       }
     },
     created(){
-      this.getUsers(false)
+      this.$nextTick(function () {
+        this.getUsers( false )
+      })
     },
     methods:{
-      getUsers(refresh){
+      getUsers( refresh ){
         this.visible = true
         let params = {
           refresh: refresh,
           params: {
+            take: 8,
             include: 'addresses,fields'
           }
         }
