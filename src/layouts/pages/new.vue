@@ -35,6 +35,14 @@
             Destacados
           </q-toolbar-title>
         </q-toolbar>
+        <div class="row">
+          <div class="col-md-12 q-px-lg  q-py-lg">
+            <news
+              categoryId="1"
+              :shadowVisible="false"
+              :titleVisible="false"/>
+          </div>
+        </div>
       </div>
     </div>
     <inner-loading :visible="visible"/>
@@ -42,7 +50,11 @@
 </template>
 
 <script>
+  import news from 'src/components/qblog/widgets/posts'
   export default {
+    components:{
+      news,
+    },
     data(){
       return {
         visible: false,

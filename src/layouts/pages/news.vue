@@ -67,7 +67,7 @@
     },
     created() {
       this.$nextTick(function () {
-        this.getDataTable(true)
+        this.getDataTable( false )
       })
     },
     watch:{
