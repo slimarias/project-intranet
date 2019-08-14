@@ -1,9 +1,8 @@
 <template>
-  <div class="row q-mx-md q-my-md custom-shadow bg-white">
+  <div :class="`row q-mx-md q-my-md ${ shadowVisible ? 'custom-shadow' : ''} bg-white`">
     <div class="col-md-12 relative-position">
-      <q-scroll-area style="height: 870px;">
       <q-list highlight no-border	>
-        <q-list-header>
+        <q-list-header v-if="titleVisible">
           <q-icon
             class="q-mr-md"
             name="fa fa-newspaper"
@@ -11,8 +10,9 @@
             size="20px"/>
           Noticias
         </q-list-header>
-        <q-item-separator />
+        <q-item-separator v-if="titleVisible"/>
         <q-item
+          class="q-mb-lg"
           v-for="(item, index) in news"
           :key="index">
           <q-item-side>
@@ -30,7 +30,6 @@
         </q-item>
         <q-item-separator />
       </q-list>
-      </q-scroll-area>
       <inner-loading :visible="visible"/>
     </div>
   </div>
@@ -39,7 +38,18 @@
 <script>
   export default {
     props:{
-
+      categoryId:{
+        type: String,
+        defalt: '',
+      },
+      titleVisible:{
+        type:Boolean,
+        defalt: true,
+      },
+      shadowVisible:{
+        type:Boolean,
+        defalt: true,
+      }
     },
     data(){
       return{
@@ -48,7 +58,7 @@
       }
     },
     created(){
-      this.getNews(false)
+      this.getNews( false )
     },
     methods:{
       getNews(refresh){
@@ -56,8 +66,13 @@
         let params = {
           refresh: refresh,
           params: {
+            take: 7,
+            filter:{
+              categories: parseInt(this.categoryId)
+            }
           }
         }
+        
         this.$crud.index('apiRoutes.qblog.posts', params)
         .then( response =>{
           this.news = response.data
@@ -86,7 +101,7 @@
   background-position center
   background-repeat no-repeat
   background-size cover
-  width 100px
-  height 100px
+  width 90px
+  height 90px
   border 1px solid #dddddd52
 </style>
