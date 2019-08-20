@@ -2,7 +2,7 @@
     <q-scroll-area style=" height: 700px;">
       <div class="row">
       <q-card
-        class="col-4 no-shadow q-px-md q-mb-xl"
+        class="col-xs-12 col-md-4 no-shadow q-px-md q-mb-xl"
         v-for="(item, index) in news"
         :key="index">
         <q-card-media>

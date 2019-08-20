@@ -17,7 +17,7 @@
               v-if="table.pagination.lastPage > 1">
               <q-pagination
                 direction-links
-                class="col-12 text-center"
+                class="col-md-12 text-center"
                 v-model="table.pagination.page"
                 :max="table.pagination.lastPage"
                 @input="getDataTable"/>

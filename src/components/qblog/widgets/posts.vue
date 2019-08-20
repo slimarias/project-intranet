@@ -1,6 +1,6 @@
 <template>
   <div :class="`row q-mx-md q-my-md ${ shadowVisible ? 'custom-shadow' : ''} bg-white`">
-    <div class="col-md-12 relative-position">
+    <div class="col-md-12 relative-position" style="min-height: 985px">
       <q-list highlight no-border	>
         <q-list-header v-if="titleVisible">
           <q-icon
