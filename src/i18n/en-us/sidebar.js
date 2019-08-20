@@ -3,7 +3,7 @@ export default {
   pageConfig : 'Configuration',
   pageNotFound : 'Not Found',
   calendary : 'Calendary',
-  directory : 'Calendary',
+  directory : 'Directory',
   messenger : 'Messenger',
   news : 'News',
 }

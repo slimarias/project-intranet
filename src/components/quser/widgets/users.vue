@@ -1,6 +1,6 @@
 <template>
   <div class="row q-mx-md q-my-md custom-shadow bg-white">
-    <div class="col-md-12  relative-position">
+    <div class="col-md-12  relative-position" style="min-height: 530px">
       
         <q-list no-border	>
           <q-list-header>
@@ -15,7 +15,7 @@
           <q-item />
             <div class="row" v-if="users">
               <div
-                class="col-3 text-center q-mb-xl"
+                class="col-xs-6 col-md-3 text-center q-mb-xl"
                 v-for="(item, index) in users"
                 :key="index">
                 <img

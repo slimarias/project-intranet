@@ -11,7 +11,7 @@
           <events/>
         </div>
         <div class="col-md-6">
-            <events/>
+        
         </div>
       </div>
       <div class="row">
