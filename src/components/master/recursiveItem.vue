@@ -69,18 +69,36 @@
 	}
 </script>
 <style lang="stylus">
-	@import "~variables";
-	#listMenu
-		.q-icon
-			font-size 16px
+  @import "~variables";
+  #listMenu
+    .q-icon
+      font-size 18px
 
-		.q-collapsible-inner
-			a, .q-collapsible
-				border-top none !important
+    .q-collapsible-inner
+      a, .q-collapsible
+        border-top none !important
 
-		.q-item, q-collapsible
-			min-height 38px !important
-			padding 6px 10px
+    .q-item, q-collapsible
+      min-height 80px !important
+      padding 6px 50px
+  
+      .q-item-label
+        font-weight 500
+
+      .q-item-sublabel
+        color $secondary
+
+      &.router-link-active
+        background: linear-gradient(to right, #6CC145, #37AD4C);
+
+        .q-icon
+          color $tertiary
+
+        .q-item-label
+          color $tertiary
+
+        .q-item-sublabel
+          color white
 </style>
 
 
