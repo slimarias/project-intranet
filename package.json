@@ -20,7 +20,7 @@
     "@fullcalendar/vue": "^4.2.2",
     "@imagina/qblog": "^1.0.0",
     "@imagina/qcommerce": "^1.0.0",
-    "@imagina/qcrud": "^1.0.0",
+    "@imagina/qcrud": "^1.0.2",
     "@imagina/qhelper": "^1.0.0",
     "@imagina/qmedia": "^1.0.0",
     "@imagina/qmenu": "^1.0.0",
