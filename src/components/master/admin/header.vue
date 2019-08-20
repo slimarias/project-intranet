@@ -20,7 +20,10 @@
             </router-link>
           </div>
         </q-toolbar-title>
-
+  
+        
+        <myNotes/>
+        
         <!--== Button User ==-->
         <q-btn :to="{name: 'user.profile.me'}" flat
                v-if="this.$q.platform.is.desktop && $store.state.quserAuth.userToken">
@@ -74,13 +77,15 @@
   import WidgetUser from "@imagina/quser/_components/widget-user";
   import configList from '../configList';
   import menuList from "../recursiveItem";
+  import myNotes from '@imagina/qnote/_components/admin/notes/widgets/note'
 
   export default {
     props: {},
     components: {
       WidgetUser,
       configList,
-      menuList
+      menuList,
+      myNotes
     },
     watch: {},
     mounted() {
