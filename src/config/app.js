@@ -13,13 +13,14 @@ export default {
     'qchat',
     'quser',
     'qblog',
-    //'qcommerce',
+    'qevent',
+    'qcommerce',
     //'qplace',
-    //'qmenu',
+    'qmenu',
     'qmedia',
-    //'qslider',
+    'qslider',
     'qsite',
-
+    'qnote',
   ],
   //Storage
   saveStorage : {
