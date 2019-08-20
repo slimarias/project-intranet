@@ -1,6 +1,7 @@
 <template>
   <div class='calendario-evento'>
     <FullCalendar
+      v-if="true"
       ref="fullCalendar"
       height= '300'
       defaultView="dayGridMonth"
@@ -12,7 +13,7 @@
       @dateClick="handleDateClick"
       :plugins="calendarPlugins"
       :weekends="calendarWeekends"
-      :events="dataCalendar"
+      :events="dataForCalendar"
       timeZone='UTC'
       locale ="es-ES"
       :buttonText="{
@@ -36,6 +37,18 @@
       dataCalendar: {
         type: Array,
         default: () => []
+      }
+    },
+    computed:{
+      dataForCalendar(){
+        return this.dataCalendar.map(event => {
+          return  {
+            title: event.title,
+            start: event.startDate,
+            end: event.endDate,
+            color: '#29DB90',
+          }
+        })
       }
     },
     data () {
@@ -67,8 +80,8 @@ color-bg= rgba(255,255,255,0.522)
 @import '~@fullcalendar/daygrid/main.css';
 @import '~@fullcalendar/timegrid/main.css';
 .calendario-evento
+  border: 1px solid color-border
   .fc-day-grid-event .fc-content span
-    font-size: 10px
     color: #fff
   
   .fc-dayGridMonth-button:before,.fc-timeGridWeek-button:before,.fc-timeGridDay-button:before
@@ -85,11 +98,11 @@ color-bg= rgba(255,255,255,0.522)
     position: relative
     
   .fc-dayGridMonth-button:before
-    content: '\f00a'
+    content: ''
   .fc-timeGridWeek-button:before
-    content: '\f0db'
+    content: ''
   .fc-timeGridDay-button:before
-    content: '\f039'
+    content: ''
 
   .fc-unthemed td.fc-today
     background: color-bg

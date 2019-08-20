@@ -1,6 +1,6 @@
 <template>
   <div>
-  
+    <pre>{{event}}</pre>
   </div>
 </template>
 
