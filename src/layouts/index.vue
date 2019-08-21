@@ -11,7 +11,7 @@
           <events/>
         </div>
         <div class="col-md-6">
-        
+          <birthdays/>
         </div>
       </div>
       <div class="row">
@@ -30,11 +30,13 @@
   import news from 'src/components/qblog/widgets/posts'
   import events from 'src/components/qevent/widgets/events'
   import users from 'src/components/quser/widgets/users'
+  import birthdays from 'src/components/qevent/widgets/birthdays'
   export default {
     components:{
       news,
       events,
-      users
+      users,
+      birthdays
     },
     name: 'PageIndex',
     data() {

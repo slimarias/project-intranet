@@ -97,6 +97,18 @@
         this.getData({pagination: this.table.pagination}, refresh)
       },
       getData({pagination, filter}, refresh = false) {
+
+        let fields = [
+          {name: 'cellularPhone', value: ''},
+          {name: 'birthday', value: ''},
+          {name: 'identification', value: ''},
+          {name: 'mainImage', value: ''},
+          {name: 'email', value: ''},
+          {name: 'socialNetworks', value: []},
+          {name: 'contacts', value: []},
+          {name: 'products', value: []}
+        ]
+        
         this.loading = true
         let params = {
           refresh: refresh,
@@ -109,7 +121,15 @@
         }
         this.$crud.index('apiRoutes.quser.users', params)
         .then( response =>{
-          this.table.data = response.data
+          this.table.data = response.data.map( user => {
+            return {
+              smallImage: user.smallImage,
+              fullName: user.fullName,
+              email: user.email,
+              fields: this.$helper.convertToFrontField(fields, user.fields),
+              addresses: user.addresses
+            }
+          })
           this.table.pagination.page = response.meta.page.currentPage
           this.table.pagination.rowsNumber = response.meta.page.total
           this.table.pagination.rowsPerPage = pagination.rowsPerPage

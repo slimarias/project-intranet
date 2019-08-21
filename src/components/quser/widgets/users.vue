@@ -70,6 +70,18 @@
     },
     methods:{
       getUsers( refresh ){
+
+        let fields = [
+          {name: 'cellularPhone', value: ''},
+          {name: 'birthday', value: ''},
+          {name: 'identification', value: ''},
+          {name: 'mainImage', value: ''},
+          {name: 'email', value: ''},
+          {name: 'socialNetworks', value: []},
+          {name: 'contacts', value: []},
+          {name: 'products', value: []}
+        ]
+        
         this.visible = true
         let params = {
           refresh: refresh,
@@ -80,7 +92,15 @@
         }
         this.$crud.index('apiRoutes.quser.users', params)
           .then( response =>{
-            this.users = response.data
+            this.users = response.data.map( user => {
+              return {
+                smallImage: user.smallImage,
+                fullName: user.fullName,
+                email: user.email,
+                fields: this.$helper.convertToFrontField(fields, user.fields),
+                addresses: user.addresses
+              }
+            })
             this.visible = false
           })
           .catch( error => {

@@ -47,8 +47,8 @@
                   <q-item-tile label>
                     <b>{{$tr('ui.form.phone')}}:</b>
                   </q-item-tile>
-                  <q-item-tile sublabel>
-                  {{getPhone(user.fields, 'cellularPhone').value}}
+                  <q-item-tile sublabel v-if="user.fields">
+                    {{user.fields.cellularPhone.value}}
                   </q-item-tile>
                 </q-item-main>
               </q-item>
@@ -104,11 +104,18 @@
   export default {
     props:{
       user:{
-        type:Object,
-        default: ()=>({
-          fields: [],
-          addresses: []
-        })
+        type: Object,
+        default: ()=>{
+          return {
+            fields:{
+              cellularPhone: {
+                name: "cellularPhone",
+                  value: ""
+              }
+            },
+            addresses: []
+          }
+        }
       },
       opened:{
         type: Boolean,

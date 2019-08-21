@@ -28,7 +28,7 @@
                       <b>{{$tr('ui.form.phone')}}:</b>
                     </q-item-tile>
                     <q-item-tile sublabel>
-                      {{getPhone(user.fields).value}}
+                      {{user.fields.cellularPhone.value}}
                     </q-item-tile>
                   </q-item-main>
                 </q-item>
@@ -63,7 +63,16 @@
     props:{
       user:{
         type: Object,
-        default: () => {}
+        default: () => {
+          return {
+            fields:{
+              cellularPhone: {
+                name: "cellularPhone",
+                value: ""
+              }
+            }
+          }
+        }
       }
     },
     data () {
@@ -75,15 +84,6 @@
       getUrlImg(uri){
         return `${config('apiRoutes.api.base_url')}/${uri}`
       },
-      getPhone(fields){
-        if (!fields.length){
-          return {value: this.$tr('ui.message.notFound')}
-        }
-        return fields.find(field => {
-          let response = field.name == 'cellularPhone'
-          return response
-        })
-      }
     }
   }
 </script>
