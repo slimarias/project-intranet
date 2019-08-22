@@ -65,6 +65,7 @@
         type: Object,
         default: () => {
           return {
+            smallImage: 'modules/iprofile/img/default.jpg',
             fields:{
               cellularPhone: {
                 name: "cellularPhone",

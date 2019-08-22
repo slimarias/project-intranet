@@ -20,8 +20,9 @@
                 :key="index">
                 <img
                   style="cursor: pointer;"
+                  v-if="users"
                   @click="openModal = true; userSelected = item"
-                  :src="getUrlImg(item.smallImage)"
+                  :src="getUrlImg(item.smallImage || 'modules/iprofile/img/default.jpg')"
                   class="custom-avatar">
                 <div
                   class="q-subheading"
@@ -60,7 +61,7 @@
         userSelected:{},
         openModal:false,
         visible: false,
-        users:false
+        users:[]
       }
     },
     created(){
