@@ -10,7 +10,7 @@ export default {
   modules : [
     'qhelper',
     'qcrud',
-    'qchat',
+    //'qchat',
     'quser',
     'qblog',
     'qevent',
