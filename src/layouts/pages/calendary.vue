@@ -4,69 +4,81 @@
       <q-tab default name="events" slot="title" label="Eventos" />
       <q-tab name="calendary" slot="title"  label="Calendario" />
       <q-tab-pane name="events">
-        <q-list no-border	highlight>
-          <q-item
-            v-for="(event, index) in table.data"
-           :key="index">
-            <q-item-side>
-              <q-item-tile>
-                <div
-                  @click="openModal = true; eventSelected = event"
-                  :style="`background-image: url(${event.mainImage.path}); cursor: pointer`"
-                  class="product-img">
-                </div>
-              </q-item-tile>
-            </q-item-side>
-            <q-item-main >
-              <q-item-tile label>
-                <div class="row">
-                  <div class="col-md-12 q-px-xl">
-                    <p>
-                      <b>{{event.title}}</b>
-                    </p>
-                    <p align="justify">
-                      {{event.summary}}
-                    </p>
+        <div v-if="table.data.length > 0">
+          <q-list no-border	highlight>
+            <q-item
+              v-for="(event, index) in table.data"
+             :key="index">
+              <q-item-side>
+                <q-item-tile>
+                  <div
+                    @click="openModal = true; eventSelected = event"
+                    :style="`background-image: url(${event.mainImage.path}); cursor: pointer`"
+                    class="product-img">
                   </div>
-                  <div class="col-md-6 q-px-xl">
-                    <div class="row">
-                      <div class="col-md-4">
-                        <b>Dirección</b>
+                </q-item-tile>
+              </q-item-side>
+              <q-item-main >
+                <q-item-tile label>
+                  <div class="row">
+                    <div class="col-md-12 q-px-xl">
+                      <p>
+                        <b>{{event.title}}</b>
+                      </p>
+                      <p align="justify">
+                        {{event.summary}}
+                      </p>
+                    </div>
+                    <div class="col-md-6 q-px-xl">
+                      <div class="row">
+                        <div class="col-md-4">
+                          <b>Dirección</b>
+                        </div>
+                        <div class="col-md-8">
+                          <p>
+                            {{event.address}}
+                          </p>
+                        </div>
                       </div>
-                      <div class="col-md-8">
-                        <p>
-                          {{event.address}}
-                        </p>
+                    </div>
+                    <div class="col-md-6 q-px-xl">
+                      <div class="row">
+                        <div class="col-md-4">
+                          <b>Fecha: </b>
+                        </div>
+                        <div class="col-md-8">
+                          <p>
+                            {{$trd(event.startDate)}} - {{$trd(event.endDate)}}
+                          </p>
+                        </div>
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-6 q-px-xl">
-                    <div class="row">
-                      <div class="col-md-4">
-                        <b>Fecha: </b>
-                      </div>
-                      <div class="col-md-8">
-                        <p>
-                          {{$trd(event.startDate)}} - {{$trd(event.endDate)}}
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </q-item-tile>
-            </q-item-main>
-          </q-item>
-        </q-list>
-        <q-item-separator />
-        <div
-          class="flex flex-center"
-          v-if="table.pagination.lastPage > 1">
-          <q-pagination
-            direction-links
-            class="col-md-12 text-center"
-            v-model="table.pagination.page"
-            :max="table.pagination.lastPage"
-            @input="getDataTable"/>
+                </q-item-tile>
+              </q-item-main>
+            </q-item>
+          </q-list>
+          <q-item-separator />
+          <div
+            class="flex flex-center"
+            v-if="table.pagination.lastPage > 1">
+            <q-pagination
+              direction-links
+              class="col-md-12 text-center"
+              v-model="table.pagination.page"
+              :max="table.pagination.lastPage"
+              @input="getDataTable"/>
+          </div>
+        </div>
+        <div v-else>
+          <div class="row q-mx-md q-my-md" style="min-height: 790px">
+            <div class="col-md-12">
+              <not-found
+                class="absolute-center"
+                label=" "
+                :showButton="false"/>
+            </div>
+          </div>
         </div>
       </q-tab-pane>
       <q-tab-pane name="calendary">
