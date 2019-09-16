@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c83755af-fec3-4f30-b4b7-e3256bbc249b" name="Default Changelist" comment=" + Enable chat">
+    <list default="true" id="c83755af-fec3-4f30-b4b7-e3256bbc249b" name="Default Changelist" comment=" + Update image for empty content in calendary">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/pages/calendary.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/pages/calendary.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src-pwa/custom-service-worker.js" beforeDir="false" afterPath="$PROJECT_DIR$/src-pwa/custom-service-worker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/master/admin/header.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/master/admin/header.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/app.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,87 +19,7 @@
     </execution>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/@imagina/qchat/_layouts/admin/messages/index.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/@imagina/qchat/_components/admin/myConversations.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2112">
-              <caret line="90" column="97" selection-start-line="90" selection-start-column="89" selection-end-line="90" selection-end-column="97" />
-              <folding>
-                <element signature="e#487#565#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/@imagina/qchat/_components/admin/labelConversation.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1512">
-              <caret line="63" column="19" selection-start-line="63" selection-start-column="12" selection-end-line="63" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/@imagina/qchat/_components/admin/newConversation.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="21" column="60" selection-start-line="21" selection-start-column="60" selection-end-line="21" selection-end-column="60" />
-              <folding>
-                <element signature="n#style#0;n#q-btn#0;n#q-modal-layout#0;n#q-modal#0;n#template#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/@imagina/qchat/_components/admin/conversation.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="63" column="12" lean-forward="true" selection-start-line="56" selection-start-column="6" selection-end-line="63" selection-end-column="12" />
-              <folding>
-                <element signature="n#q-page#0;n#div#0;n#template#0;n#!!top" />
-                <element signature="n#style#0;n#q-scroll-area#0;n#div#0;n#div#0;n#q-page#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="e#3746#4232#0" />
-                <element signature="e#4277#5082#0" />
-                <element signature="e#5107#5257#0" />
-                <element signature="e#5279#5348#0" />
-                <element signature="e#5378#5470#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/layouts/pages/calendary.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="377">
-              <caret line="81" column="14" selection-start-line="81" selection-start-column="14" selection-end-line="81" selection-end-column="14" />
-              <folding>
-                <element signature="n#q-list#0;n#q-tab-pane#0;n#q-tabs#0;n#div#0;n#template#0;n#!!top" />
-                <element signature="n#div#0;n#q-tab-pane#0;n#q-tabs#0;n#div#0;n#template#0;n#!!top" />
-                <element signature="n#style#0;n#div#0;n#div#1;n#q-tab-pane#0;n#q-tabs#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -110,14 +32,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>this.$tr</find>
-      <find>visible</find>
-      <find>date</find>
-      <find>user</find>
-      <find>inpu</find>
-      <find>dynamic</find>
-      <find>Picker</find>
-      <find>onInput</find>
       <find>summa</find>
       <find>conta</find>
       <find>addre</find>
@@ -139,10 +53,19 @@
       <find>$alert</find>
       <find>field</find>
       <find>getValidationMessage</find>
+      <find>lastMessageReaded</find>
+      <find>conversationsUsers</find>
       <find>updateConversation</find>
+      <find>main.js</find>
+      <find>main</find>
+      <find>ipl</find>
+      <find>total</find>
+      <find>emai</find>
+      <find>name</find>
     </findStrings>
     <dirStrings>
       <dir>C:\Users\Imagina\Documents\project-intranet\node_modules\@imagina\qchat</dir>
+      <dir>C:\Users\Imagina\Documents\project-intranet</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -179,9 +102,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/node_modules/@imagina/qevent/_config/sidebar.js" />
-        <option value="$PROJECT_DIR$/src/components/qevent/event.vue" />
-        <option value="$PROJECT_DIR$/src/layouts/master.vue" />
         <option value="$PROJECT_DIR$/src/components/qblog/widgets/posts.vue" />
         <option value="$PROJECT_DIR$/src/components/qevent/gridCalendar.vue" />
         <option value="$PROJECT_DIR$/node_modules/@imagina/qnote/_config/backendPages.js" />
@@ -193,7 +113,6 @@
         <option value="$PROJECT_DIR$/node_modules/@imagina/qnote/_i18n/en-us/layout.js" />
         <option value="$PROJECT_DIR$/node_modules/@imagina/qnote/_i18n/es/layout.js" />
         <option value="$PROJECT_DIR$/node_modules/@imagina/qnote/_config/apiRoutes.js" />
-        <option value="$PROJECT_DIR$/node_modules/@imagina/qnote/_components/admin/notes/widgets/note.vue" />
         <option value="$PROJECT_DIR$/src/components/qevent/widgets/events.vue" />
         <option value="$PROJECT_DIR$/src/components/qevent/eventModal.vue" />
         <option value="$PROJECT_DIR$/node_modules/@imagina/qevent/_config/apiRoutes.js" />
@@ -210,7 +129,6 @@
         <option value="$PROJECT_DIR$/node_modules/@imagina/qchat/_components/admin/bodyMessage.vue" />
         <option value="$PROJECT_DIR$/node_modules/@imagina/qchat/_layouts/admin/messages/thread.vue" />
         <option value="$PROJECT_DIR$/node_modules/@imagina/qchat/_components/admin/countMessages.vue" />
-        <option value="$PROJECT_DIR$/src/config/app.js" />
         <option value="$PROJECT_DIR$/node_modules/@imagina/qchat/_config/apiRoutes.js" />
         <option value="$PROJECT_DIR$/node_modules/@imagina/qchat/_components/admin/users.vue" />
         <option value="$PROJECT_DIR$/node_modules/@imagina/qchat/_config/backendPages.js" />
@@ -226,18 +144,23 @@
         <option value="$PROJECT_DIR$/node_modules/@imagina/qevent/_crud/crudQeventEvents.vue" />
         <option value="$PROJECT_DIR$/node_modules/@imagina/qchat/_components/admin/newConversation.vue" />
         <option value="$PROJECT_DIR$/node_modules/@imagina/qchat/_components/admin/myConversations.vue" />
-        <option value="$PROJECT_DIR$/src/components/master/admin/header.vue" />
         <option value="$PROJECT_DIR$/node_modules/@imagina/qchat/_layouts/admin/messages/index.vue" />
-        <option value="$PROJECT_DIR$/node_modules/@imagina/qchat/_components/admin/conversation.vue" />
         <option value="$PROJECT_DIR$/src/layouts/pages/calendary.vue" />
+        <option value="$PROJECT_DIR$/node_modules/@imagina/qchat/_components/admin/conversation.vue" />
+        <option value="$PROJECT_DIR$/src/config/app.js" />
+        <option value="$PROJECT_DIR$/node_modules/@imagina/qevent/_layouts/admin/categories/index.vue" />
+        <option value="$PROJECT_DIR$/src-pwa/custom-service-worker.js" />
+        <option value="$PROJECT_DIR$/src/components/master/admin/header.vue" />
+        <option value="$PROJECT_DIR$/node_modules/@imagina/qnote/_components/admin/notes/widgets/note.vue" />
+        <option value="$PROJECT_DIR$/src/index.template.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="240" />
-    <option name="y" value="130" />
-    <option name="width" value="1440" />
-    <option name="height" value="780" />
+    <option name="x" value="-1928" />
+    <option name="y" value="-223" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -260,14 +183,12 @@
               <item name="project-intranet" type="b2602c69:ProjectViewProjectNode" />
               <item name="project-intranet" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="layouts" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="project-intranet" type="b2602c69:ProjectViewProjectNode" />
               <item name="project-intranet" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="layouts" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="src-pwa" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -380,7 +301,23 @@
       <workItem from="1567000493645" duration="15689000" />
       <workItem from="1567086730166" duration="13295000" />
       <workItem from="1567173134034" duration="18611000" />
-      <workItem from="1567264041053" duration="2570000" />
+      <workItem from="1567264041053" duration="3255000" />
+      <workItem from="1567434181119" duration="9251000" />
+      <workItem from="1567519922154" duration="12393000" />
+      <workItem from="1567606236388" duration="7810000" />
+      <workItem from="1567691487793" duration="9838000" />
+      <workItem from="1567778823215" duration="6408000" />
+      <workItem from="1567866769372" duration="2740000" />
+      <workItem from="1568037307418" duration="4623000" />
+      <workItem from="1568124119171" duration="593000" />
+      <workItem from="1568127465562" duration="1196000" />
+      <workItem from="1568156309079" duration="316000" />
+      <workItem from="1568215306596" duration="98000" />
+      <workItem from="1568219574545" duration="3107000" />
+      <workItem from="1568295446537" duration="2212000" />
+      <workItem from="1568383306986" duration="2071000" />
+      <workItem from="1568474961087" duration="599000" />
+      <workItem from="1568641781988" duration="601000" />
     </task>
     <task id="LOCAL-00001" summary=" + Update base to new base app v1.0">
       <created>1564502930197</created>
@@ -571,17 +508,23 @@
       <option name="project" value="LOCAL" />
       <updated>1566861936319</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary=" + Update image for empty content in calendary">
+      <created>1567270199912</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1567270199913</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="350768000" />
+    <option name="totallyTimeSpent" value="415309000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="-1928" y="-223" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1641791" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1337953" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -606,7 +549,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value=" + Add dashboard&#10; + Add directory view" />
     <MESSAGE value=" + Add calendary view without service in backend" />
     <MESSAGE value=" + Add view news and new" />
     <MESSAGE value=" + Add messenger" />
@@ -631,118 +573,10 @@
     <MESSAGE value=" + fix console error with image not found, &#10; + add un read messages in chat" />
     <MESSAGE value=" + disable chat" />
     <MESSAGE value=" + Enable chat" />
-    <option name="LAST_COMMIT_MESSAGE" value=" + Enable chat" />
+    <MESSAGE value=" + Update image for empty content in calendary" />
+    <option name="LAST_COMMIT_MESSAGE" value=" + Update image for empty content in calendary" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/config/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/@imagina/qchat/_components/admin/countMessages.vue" />
-    <entry file="file://$PROJECT_DIR$/node_modules/@imagina/qchat/_config/frontendPages.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/@imagina/qchat/_components/admin/package.json" />
-    <entry file="file://$PROJECT_DIR$/node_modules/@imagina/qchat/_config/backendPages.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="523">
-          <caret line="24" column="40" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/layouts/pages/news.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="72" selection-start-line="72" selection-end-line="82" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/@imagina/qchat/_components/admin/bodyMessage.vue" />
-    <entry file="file://$PROJECT_DIR$/node_modules/@imagina/qchat/_components/admin/thread.vue" />
-    <entry file="file://$PROJECT_DIR$/node_modules/@imagina/qchat/_components/admin/users.vue" />
-    <entry file="file://$PROJECT_DIR$/src/plugins/clone.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="3" column="34" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/@imagina/qcommerce/_store/cart/state.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/@imagina/qchat/_store/conversation/mutations.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="39" selection-start-column="39" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/@imagina/qcommerce/_components/frontend/cart/widgets/addToCartOptions.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-340">
-          <caret line="143" column="61" selection-start-line="143" selection-start-column="53" selection-end-line="143" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/@imagina/qcommerce/_components/frontend/cart/sumary.vue">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/@imagina/qcommerce/_components/frontend/products/widgets/selectOptionsProduct.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-240">
-          <caret line="184" column="37" selection-start-line="184" selection-start-column="30" selection-end-line="184" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/@imagina/qcommerce/_components/frontend/products/widgets/selectProducts.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-676" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/@imagina/qcommerce/_layouts/frontend/products/index.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="118" column="53" selection-start-line="118" selection-start-column="49" selection-end-line="118" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/@imagina/qcommerce/_layouts/frontend/products/show.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2184">
-          <caret line="97" column="56" selection-start-line="97" selection-start-column="45" selection-end-line="97" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/@imagina/qcommerce/_layouts/frontend/categories/show.vue">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/@imagina/qcommerce/_layouts/frontend/categories/index.vue">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/@imagina/qchat/_store/conversation/state.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="1" column="20" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/@imagina/qcommerce/_components/selectQuantity.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-936" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/store/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/@imagina/qcommerce/_store/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -829,23 +663,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/i18n/es/ui.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="55">
-          <caret line="13" column="10" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugins/globalComponents.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="15" column="43" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="43" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/404.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="528">
@@ -870,36 +687,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugins/notification.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="19" column="27" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/@imagina/qchat/_layouts/admin/messages/thread.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="764">
-          <caret line="130" column="43" selection-start-line="129" selection-start-column="11" selection-end-line="130" selection-end-column="43" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="e#1787#1858#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/layouts/master.vue">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/master/admin/header.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="61" column="8" selection-start-line="61" selection-start-column="8" selection-end-line="61" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/layouts/index.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -907,21 +694,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/@imagina/qchat/_layouts/admin/messages/index.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/@imagina/qchat/_components/admin/myConversations.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2112">
-          <caret line="90" column="97" selection-start-line="90" selection-start-column="89" selection-end-line="90" selection-end-column="97" />
+        <state relative-caret-position="192">
+          <caret line="8" column="24" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="24" />
           <folding>
             <element signature="e#487#565#0" expanded="true" />
           </folding>
@@ -937,7 +713,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/@imagina/qchat/_components/admin/newConversation.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
+        <state relative-caret-position="-72">
           <caret line="21" column="60" selection-start-line="21" selection-start-column="60" selection-end-line="21" selection-end-column="60" />
           <folding>
             <element signature="n#style#0;n#q-btn#0;n#q-modal-layout#0;n#q-modal#0;n#template#0;n#!!top" expanded="true" />
@@ -948,31 +724,219 @@
     <entry file="file://$PROJECT_DIR$/node_modules/@imagina/qchat/_components/admin/conversation.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
-          <caret line="63" column="12" lean-forward="true" selection-start-line="56" selection-start-column="6" selection-end-line="63" selection-end-column="12" />
+          <caret line="107" column="36" selection-start-line="107" selection-start-column="36" selection-end-line="107" selection-end-column="36" />
           <folding>
-            <element signature="n#q-page#0;n#div#0;n#template#0;n#!!top" />
-            <element signature="n#style#0;n#q-scroll-area#0;n#div#0;n#div#0;n#q-page#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#q-page#0;n#div#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="e#3746#4232#0" />
-            <element signature="e#4277#5082#0" />
-            <element signature="e#5107#5257#0" />
-            <element signature="e#5279#5348#0" />
-            <element signature="e#5378#5470#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/layouts/pages/directory.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="40" column="20" lean-forward="true" selection-start-line="39" selection-start-column="8" selection-end-line="40" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/layouts/pages/messenger.vue">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/@imagina/qchat/_layouts/admin/messages/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/@imagina/qchat/_layouts/admin/messages/thread.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2372">
+          <caret line="179" column="74" lean-forward="true" selection-start-line="179" selection-start-column="35" selection-end-line="179" selection-end-column="74" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="e#1787#1858#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src-pwa/register-service-worker.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="18" column="22" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="22" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.vue">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/index.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/pwa-mat/service-worker.js" />
+    <entry file="file://$PROJECT_DIR$/src-pwa/custom-service-worker.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="356">
+          <caret line="106" column="29" selection-start-line="106" selection-start-column="25" selection-end-line="106" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/plugins/notification.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="5" column="18" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/@imagina/quser/_crud/roles.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="65" column="25" selection-start-line="65" selection-start-column="25" selection-end-line="65" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/@imagina/quser/_layouts/admin/roles/index.vue">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/statics/logo.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quasar.conf.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="788">
+          <caret line="59" column="10" selection-start-line="59" selection-start-column="10" selection-end-line="59" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/i18n/es/ui.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="108" column="9" selection-start-line="108" selection-start-column="4" selection-end-line="108" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/plugins/axios.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/i18n/en-us/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/@imagina/qnote/_components/admin/notes/widgets/note.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="11" column="24" lean-forward="true" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/i18n/en-us/ui.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="395">
+          <caret line="107" column="8" selection-start-line="107" selection-start-column="4" selection-end-line="107" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/@imagina/qnote/_components/admin/notes/index.vue">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/layouts/app/config.vue">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.template.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/master/admin/header.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="23" column="24" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/layouts/master.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="1" column="29" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/plugins/globalComponents.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="13" column="23" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/@imagina/qevent/_layouts/admin/categories/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/config/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="23" column="12" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/@imagina/qhelper/_services/baseService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="8" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/layouts/pages/calendary.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="81" column="14" selection-start-line="81" selection-start-column="14" selection-end-line="81" selection-end-column="14" />
+        <state relative-caret-position="2304">
+          <caret line="163" column="18" selection-start-line="163" selection-start-column="13" selection-end-line="163" selection-end-column="18" />
           <folding>
-            <element signature="n#q-list#0;n#q-tab-pane#0;n#q-tabs#0;n#div#0;n#template#0;n#!!top" />
             <element signature="n#div#0;n#q-tab-pane#0;n#q-tabs#0;n#div#0;n#template#0;n#!!top" />
             <element signature="n#style#0;n#div#0;n#div#1;n#q-tab-pane#0;n#q-tabs#0;n#div#0;n#template#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/@imagina/qblog/_crud/posts.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3936">
+          <caret line="164" column="58" selection-start-line="164" selection-start-column="58" selection-end-line="164" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>

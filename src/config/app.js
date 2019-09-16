@@ -14,6 +14,7 @@ export default {
     'quser',
     'qblog',
     'qevent',
+    'qnotification',
     'qcommerce',
     //'qplace',
     'qmenu',

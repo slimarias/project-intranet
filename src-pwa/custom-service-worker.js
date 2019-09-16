@@ -19,7 +19,6 @@ if (workbox) {
     filesToCache.push(file.url)
   })
 
-
   self.__precacheManifest = [].concat(self.__precacheManifest || []);
 
   // Listen to installation event
@@ -35,8 +34,6 @@ if (workbox) {
     self.skipWaiting();
 
   });
-
-
 
   self.addEventListener('activate', function(e) {
 
@@ -82,7 +79,6 @@ if (workbox) {
     }
   });
 
-
   //Network falling back to the cache
 
   self.addEventListener('fetch', function(event) {
@@ -108,39 +104,17 @@ if (workbox) {
       }
   });
 
-  /*
- self.addEventListener('fetch', function(event) {
-	 event.respondWith(
-			 return cache.match(event.request).then(function(response) {
-				 var fetchPromise = fetch(event.request).then(function(networkResponse) {
-					 cache.put(event.request, networkResponse.clone());
-					 return networkResponse;
-				 })
-				 return response || fetchPromise;
-			 })
+  self.addEventListener('push', (event) => {
+    console.log('Received a push event', event)
 
-	 );
- });
-*/
-  /*
-		let refreshing;
-		// The event listener that is fired when the service worker updates
-		// Here we reload the page
-		self.addEventListener('controllerchange', function () {
-			if (refreshing) return;
-			refreshing = true;
-		});
+    const title = 'En Red Group';
+    const options = {
+      body: 'Test.',
+      icon: '/src/statics/logo.png',
+      badge: 'images/badge.png'
+    };
 
-		*/
-  //Cache falling back to the network
-  /*
-  self.addEventListener('fetch', function(e) {
+    event.waitUntil(self.registration.showNotification(title, options));
+  })
 
-    e.respondWith(
-      caches.match(e.request).then(function(response) {
-        return response || fetch(e.request);
-      })
-    );
-  });
-  */
 }

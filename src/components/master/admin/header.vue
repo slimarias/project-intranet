@@ -21,7 +21,7 @@
           </div>
         </q-toolbar-title>
   
-        
+        <myNotifications/>
         <myNotes/>
         
         <!--== Button User ==-->
@@ -78,6 +78,7 @@
   import configList from '../configList';
   import menuList from "../recursiveItem";
   import myNotes from '@imagina/qnote/_components/admin/notes/widgets/note'
+  import myNotifications from '@imagina/qnotification/_components/widgets/notifications'
 
   export default {
     props: {},
@@ -85,7 +86,8 @@
       WidgetUser,
       configList,
       menuList,
-      myNotes
+      myNotes,
+      myNotifications
     },
     watch: {},
     mounted() {
