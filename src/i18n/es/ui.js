@@ -64,6 +64,9 @@ export default {
     find : 'Buscar',
     user : 'Usuario',
     impersonate : 'Suplantar',
+    address : 'Dirección | Direcciones',
+    contact : 'Contacto | Contactos',
+    sociaNetwork : 'Red Social | Redes Sociales',
     viewProfile: 'Ver Peril',
   },
   message: {
@@ -158,7 +161,11 @@ export default {
     icon : 'Icono | Iconos',
     masterRecord : 'Registro maestro',
     birthday : 'Cumpleaños',
-    identification : 'Identificación'
+    identification : 'Identificación',
+    city : 'Ciudad | Ciudades',
+    state : 'Departamento | Departamentos',
+    zipCode : 'Codigo Postal',
+    socialNetwork : 'Red Social | Redes Sociales'
   },
   configList: {
     loggedAs: 'registrado como',

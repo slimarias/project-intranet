@@ -4,7 +4,7 @@
       <q-card-main>
         <div :class='`row ${true ? "flex flex-center" : ""}`'>
           <div class="col-md-3 text-center q-my-md">
-            <img :src="getUrlImg(user.smallImage)" class="custom-avatar">
+            <img :src="(user.smallImage)" class="custom-avatar">
           </div>
           <div class="col-md-9 q-mt-lg q-px-lg q-py-lg">
             <div

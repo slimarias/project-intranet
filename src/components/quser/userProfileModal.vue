@@ -18,7 +18,7 @@
         <div class="row">
           <div class="col-md-5 q-py-lg q-pl-lg">
             <img
-              :src="getUrlImg(user.smallImage || 'modules/iprofile/img/default.jpg')"
+              :src="(user.smallImage || 'modules/iprofile/img/default.jpg')"
               class="custom-avatar">
           </div>
           <div class="col-md-7 q-mt-xl q-px-lg q-py-lg">

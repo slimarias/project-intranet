@@ -17,7 +17,7 @@ export default {
 		layout: require('src/layouts/index').default,
 		containerLayout: master,
 		title: 'sidebar.pageHome',
-		icon: 'fa fa-th',
+		icon: 'fas fa-home',
 		middleware: [auth]
 	},
 	//Config Page

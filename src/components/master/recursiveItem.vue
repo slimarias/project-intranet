@@ -2,17 +2,29 @@
 	<q-list separator link no-border id="listMenu" class="q-pa-none">
 		<!--Single Item-->
 		<q-item v-for="(item,key) in menu" :key="key"
-            v-if="checkItemSingle(item)" exact
-						class="single-item"
+            v-if="checkItemSingle(item)"
+						:class="getClassItem(item)"
             @click.native="redirectTo(item)">
-			<q-item-side :icon="item.icon"/>
-			<q-item-main>{{$tr(item.title)}}</q-item-main>
+			<q-item-side v-if="item.icon && showIcons" :icon="item.icon"/>
+			<q-item-main>
+				{{translatable ? $tr(item.title) : item.title}}
+			</q-item-main>
 		</q-item>
 
 		<!-- Dropdwon Item -->
-		<q-collapsible v-else-if="checkItemMultiple(item)"
-		               :icon="item.icon" :label="$tr(item.title)">
-			<recursive-menu :key="key" :menu="item.children"/>
+		<q-collapsible v-else-if="checkItemMultiple(item)" :class="selectedChildren(item)">
+			<!--Custom Header-->
+			<template slot="header">
+				<q-item-main>
+					<q-icon :name="item.icon" class="icon-collapsible q-mr-sm text-grey-8" />
+					<span class="icon-collapsible">
+						{{translatable ? $tr(item.title) : item.title}}
+					</span>
+				</q-item-main>
+			</template>
+			<!--Recursive item-->
+			<recursive-menu :translatable="translatable" :show-icons="showIcons"
+											:key="key" :menu="item.children"/>
 		</q-collapsible>
 	</q-list>
 </template>
@@ -24,7 +36,9 @@
 		name: 'recursiveMenu',
 		components: {},
 		props: {
-			menu: {default: false}
+			menu: {default: false},
+			showIcons : {type : Boolean, default: true},
+			translatable : {type : Boolean, default : true}
 		},
 		created() {
 			this.$nextTick(function () {
@@ -62,9 +76,30 @@
         if (itemClone.linkType == 'external'){
           window.open(`https://${itemClone.url}`,itemClone.target);
         }else{
-          this.$router.push({name: itemClone.name})
+          this.$router.push({name: itemClone.name, params : itemClone.params || {}})
         }
-      }
+      },
+			selectedChildren(item){
+				let response = ''//Defualt response
+
+				//If has children's
+				if(item.children){
+					let routeName = this.$route.name
+					let isSelectedChildren = item.children.find(item => item.name == routeName)
+					if(isSelectedChildren) response = 'collapsible-active'
+				}
+
+				return response //Response
+			},
+			getClassItem(item){
+				let response = 'single-item'
+
+				if(this.$route.name == item.name)
+					if(JSON.stringify(this.$route.params) == JSON.stringify(item.params || {}))
+						response += ' router-link-active'
+
+				return response
+			}
 		}
 	}
 </script>
@@ -79,8 +114,8 @@
         border-top none !important
 
     .q-item, q-collapsible
-      min-height 80px !important
-      padding 6px 50px
+      min-height 60px !important
+      padding 6px 40px
   
       .q-item-label
         font-weight 500
@@ -89,10 +124,11 @@
         color $secondary
 
       &.router-link-active
-        background: linear-gradient(to right, #6CC145, #37AD4C);
+        background: $primary
+        color white
 
         .q-icon
-          color $tertiary
+          color white
 
         .q-item-label
           color $tertiary

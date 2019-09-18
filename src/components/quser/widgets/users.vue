@@ -22,7 +22,7 @@
                   style="cursor: pointer;"
                   v-if="users"
                   @click="openModal = true; userSelected = item"
-                  :src="getUrlImg(item.smallImage || 'modules/iprofile/img/default.jpg')"
+                  :src="(item.smallImage || 'modules/iprofile/img/default.jpg')"
                   class="custom-avatar">
                 <div
                   class="q-subheading"
