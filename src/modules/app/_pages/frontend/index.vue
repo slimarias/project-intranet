@@ -2,8 +2,8 @@
   <q-page>
 	  
 	  <div class="row">
-		  <div class="col-3">
-			  <posts/>
+		  <div class="col-12">
+			 
 		  </div>
 	  </div>
 	  
@@ -16,11 +16,19 @@
 </style>
 
 <script>
-	import posts from "../../_components/posts";
+	import posts from "../../_components/postsList";
+	import postsGrid from "../../_components/postsGrid";
+	
+	import usersList from "../../_components/usersList";
+	import usersGrid from "../../_components/usersGrid";
+	
   export default {
     name: 'PageIndex',
 	  components:{
-      posts
+      posts,
+      postsGrid,
+      usersList,
+      usersGrid,
 	  }
   }
 </script>
