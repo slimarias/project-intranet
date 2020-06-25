@@ -2,32 +2,105 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c83755af-fec3-4f30-b4b7-e3256bbc249b" name="Default Changelist" comment=" + Add widget for notifications">
+      <change beforePath="$PROJECT_DIR$/.babelrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env-example" beforeDir="false" afterPath="$PROJECT_DIR$/.env-example" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env/env.js" beforeDir="false" afterPath="$PROJECT_DIR$/env/env.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quasar.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/quasar.conf.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src-pwa/custom-service-worker.js" beforeDir="false" afterPath="$PROJECT_DIR$/src-pwa/custom-service-worker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/empty.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/master/admin/header.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/master/admin/header.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/master/frontend/footer.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/master/frontend/footer.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/master/frontend/header.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/master/frontend/header.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/master/frontend/menu.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/master/recursiveItem.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/master/recursiveItem.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/master/schedules.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/master/schedules.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/notResults.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/notResults.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/quser/userProfile.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/quser/userProfile.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/quser/userProfileModal.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/quser/userProfileModal.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/quser/widgets/users.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/quser/widgets/users.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/uploadImage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/uploadImage.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/pages/application.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/pages/application.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/i18n/en-us/ui.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/i18n/en-us/ui.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/i18n/es/ui.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/i18n/es/ui.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/app/config.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/app/config.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src-pwa/register-service-worker.js" beforeDir="false" afterPath="$PROJECT_DIR$/src-pwa/register-service-worker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/sad.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/404.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/commentsFB.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/master/admin/footer.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/master/admin/header.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/master/configList.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/master/dynamicField.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/master/frontend/footer.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/master/frontend/header.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/master/imaginaSVG.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/master/innerLoading.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/master/recursiveItem.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/master/recursiveListSelect.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/master/schedules.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/notResults.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/qblog/grid-posts.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/qblog/list-categories-children.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/qblog/list-categories.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/qblog/widgets/posts.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/qevent/event.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/qevent/eventModal.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/qevent/gridCalendar.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/qevent/widgets/birthdays.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/qevent/widgets/events.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/quser/userProfile.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/quser/userProfileModal.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/quser/widgets/users.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/uploadImage.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/apiRoutes/api.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/apiRoutes/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/pages/application.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/pages/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/sidebar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/sidebar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/app.styl" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/app.styl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/themes/common.variables.styl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/themes/variables.ios.styl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/themes/variables.mat.styl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/i18n/en-us/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/i18n/en-us/sidebar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/i18n/en-us/ui.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/i18n/es/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/i18n/es/sidebar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/i18n/es/ui.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/i18n/formats/currencyFormats.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/i18n/formats/customFormats.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/i18n/formats/dateTimeFormats.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/i18n/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.template.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.template.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/404.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/app/config.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/blank.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/config.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/index.vue" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/layouts/master.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/master.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/plugins/globalComponents.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugins/globalComponents.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/pages/calendary.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/pages/directory.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/pages/messenger.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/pages/new.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/pages/news.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/plugins/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/plugins/auth.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/plugins/axios.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/plugins/clone.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/plugins/crud.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/plugins/globalComponents.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/plugins/helper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/plugins/i18n.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/plugins/moment.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/plugins/notification.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/plugins/vuelidate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/router/middlewares/config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/router/routes.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/application/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/statics/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/app/actions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/app/getters.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/app/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/app/mutations.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/app/state.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/findValue.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/index.js" beforeDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,948 +111,52 @@
       <executable />
     </execution>
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="552">
-              <caret line="38" column="34" selection-start-line="38" selection-start-column="34" selection-end-line="38" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Desktop/project-intranet/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="552">
-              <caret line="38" column="4" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="package.json" />
-        <option value="JavaScript File" />
         <option value="Vue Single File Component" />
       </list>
     </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>cellularPhone</find>
-      <find>status</find>
-      <find>setTimeout(this.updateMessage(), 1000)</find>
-      <find>message</find>
-      <find>img</find>
-      <find>initPusher</find>
-      <find>cons</find>
-      <find>getters</find>
-      <find>$alert</find>
-      <find>field</find>
-      <find>getValidationMessage</find>
-      <find>conversationsUsers</find>
-      <find>main.js</find>
-      <find>main</find>
-      <find>ipl</find>
-      <find>total</find>
-      <find>emai</find>
-      <find>name</find>
-      <find>conversation</find>
-      <find>bac</find>
-      <find>heightView</find>
-      <find>updateConversation</find>
-      <find>conversation.messages</find>
-      <find>lastMessage</find>
-      <find>lastMessageReaded</find>
-      <find>conversationUser</find>
-      <find>pro</find>
-      <find>imper</find>
-      <find>impersonate</find>
-      <find>fullcalendar</find>
-    </findStrings>
-    <dirStrings>
-      <dir>C:\Users\Imagina\Documents\project-intranet\node_modules\@imagina\qchat</dir>
-      <dir>C:\Users\Imagina\Documents\project-intranet</dir>
-    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/src/components/qblog/widgets/posts.vue" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/src/layouts/pages/directory.vue" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/src/layouts/pages/calendary.vue" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/src/layouts/pages/news.vue" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/src/components/qevent/widgets/birthdays.vue" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/src/components/master/dynamicField.vue" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/src/components/qevent/widgets/events.vue" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/src/components/quser/widgets/users.vue" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/node_modules/@imagina/qchat/_layouts/admin/messages/thread.vue" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/node_modules/@imagina/qevent/_crud/crudQeventOrganizers.vue" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/src/components/qevent/eventModal.vue" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/src/components/qevent/gridCalendar.vue" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/src/components/qblog/list-categories.vue" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/node_modules/@imagina/qnote/_components/admin/notes/index.vue" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/node_modules/@imagina/qnote/_components/admin/notes/widgets/note.vue" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/node_modules/@imagina/qchat/_components/admin/newConversation.vue" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/src/layouts/pages/new.vue" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/src/components/quser/userProfileModal.vue" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/src/components/quser/userProfile.vue" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/node_modules/@imagina/qchat/_layouts/admin/messages/index.vue" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/src/components/qblog/grid-posts.vue" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/node_modules/@imagina/qchat/_components/admin/conversation.vue" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/node_modules/@imagina/qchat/_components/admin/labelConversation.vue" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/node_modules/@imagina/qchat/_components/admin/myConversations.vue" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/src/config/pages/application.js" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/src/components/qblog/list-categories-children.vue" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/modules/app/_components/posts.vue" root0="SKIP_INSPECTION" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/node_modules/@imagina/qnote/_i18n/en-us/layout.js" />
-        <option value="$PROJECT_DIR$/node_modules/@imagina/qnote/_i18n/es/layout.js" />
-        <option value="$PROJECT_DIR$/node_modules/@imagina/qnote/_config/apiRoutes.js" />
-        <option value="$PROJECT_DIR$/src/components/qevent/widgets/events.vue" />
-        <option value="$PROJECT_DIR$/src/components/qevent/eventModal.vue" />
-        <option value="$PROJECT_DIR$/node_modules/@imagina/qevent/_config/apiRoutes.js" />
-        <option value="$PROJECT_DIR$/node_modules/@imagina/qnote/_components/admin/notes/index.vue" />
-        <option value="$PROJECT_DIR$/src/layouts/pages/directory.vue" />
-        <option value="$PROJECT_DIR$/node_modules/@imagina/qevent/_i18n/en-us/sidebar.js" />
-        <option value="$PROJECT_DIR$/node_modules/@imagina/qevent/_i18n/es/sidebar.js" />
-        <option value="$PROJECT_DIR$/src/components/qevent/widgets/birthdays.vue" />
-        <option value="$PROJECT_DIR$/node_modules/@imagina/qchat/_components/admin/thread.vue" />
-        <option value="$PROJECT_DIR$/src/layouts/index.vue" />
-        <option value="$PROJECT_DIR$/node_modules/@imagina/qchat/_components/admin/bodyMessage.vue" />
-        <option value="$PROJECT_DIR$/node_modules/@imagina/qchat/_layouts/admin/messages/thread.vue" />
-        <option value="$PROJECT_DIR$/node_modules/@imagina/qchat/_components/admin/countMessages.vue" />
-        <option value="$PROJECT_DIR$/node_modules/@imagina/qchat/_config/apiRoutes.js" />
-        <option value="$PROJECT_DIR$/node_modules/@imagina/qchat/_components/admin/users.vue" />
-        <option value="$PROJECT_DIR$/node_modules/@imagina/qchat/_config/backendPages.js" />
-        <option value="$PROJECT_DIR$/node_modules/@imagina/qchat/_components/admin/package.json" />
-        <option value="$PROJECT_DIR$/node_modules/@imagina/qchat/_store/conversationUser/index.js" />
-        <option value="$PROJECT_DIR$/node_modules/@imagina/qchat/_store/conversationUser/state.js" />
-        <option value="$PROJECT_DIR$/node_modules/@imagina/qchat/_store/conversation/state.js" />
-        <option value="$PROJECT_DIR$/node_modules/@imagina/qchat/_store/conversation/mutations.js" />
-        <option value="$PROJECT_DIR$/node_modules/@imagina/qchat/_store/conversation/actions.js" />
-        <option value="$PROJECT_DIR$/node_modules/@imagina/qchat/_store/index.js" />
-        <option value="$PROJECT_DIR$/node_modules/@imagina/qchat/_store/conversation/getters.js" />
-        <option value="$PROJECT_DIR$/node_modules/@imagina/qevent/_crud/crudQeventEvents.vue" />
-        <option value="$PROJECT_DIR$/node_modules/@imagina/qchat/_components/admin/newConversation.vue" />
-        <option value="$PROJECT_DIR$/src/layouts/pages/calendary.vue" />
-        <option value="$PROJECT_DIR$/src/config/app.js" />
-        <option value="$PROJECT_DIR$/node_modules/@imagina/qevent/_layouts/admin/categories/index.vue" />
-        <option value="$PROJECT_DIR$/src-pwa/custom-service-worker.js" />
-        <option value="$PROJECT_DIR$/src/components/master/admin/header.vue" />
-        <option value="$PROJECT_DIR$/node_modules/@imagina/qnote/_components/admin/notes/widgets/note.vue" />
-        <option value="$PROJECT_DIR$/src/index.template.html" />
-        <option value="$PROJECT_DIR$/node_modules/@imagina/qchat/_layouts/admin/messages/index.vue" />
-        <option value="$PROJECT_DIR$/node_modules/@imagina/qchat/_components/admin/labelConversation.vue" />
-        <option value="$PROJECT_DIR$/node_modules/@imagina/qchat/_components/admin/myConversations.vue" />
-        <option value="$PROJECT_DIR$/node_modules/@imagina/qchat/_components/admin/conversation.vue" />
-        <option value="$PROJECT_DIR$/src/components/quser/widgets/users.vue" />
-        <option value="$PROJECT_DIR$/src/components/quser/userProfile.vue" />
-        <option value="$PROJECT_DIR$/src/components/quser/userProfileModal.vue" />
-        <option value="$USER_HOME$/Desktop/basequasar-app/src/i18n/es/ui.js" />
-        <option value="$USER_HOME$/Desktop/basequasar-app/src/i18n/en-us/ui.js" />
-        <option value="$USER_HOME$/Desktop/basequasar-app/src/components/master/admin/header.vue" />
-        <option value="$USER_HOME$/Desktop/basequasar-app/src/config/pages/application.js" />
-        <option value="$USER_HOME$/Desktop/basequasar-app/src/config/sidebar.js" />
-        <option value="$USER_HOME$/Desktop/basequasar-app/src/layouts/master.vue" />
-        <option value="$USER_HOME$/Desktop/basequasar-app/src/components/master/recursiveItem.vue" />
-        <option value="$PROJECT_DIR$/package.json" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1928" />
-    <option name="y" value="-223" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
-  </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="project-intranet" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project-intranet" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope">
-        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
-          <expand>
-            <path>
-              <item name="project-intranet" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="C:\Users\Imagina\Documents\project-intranet" type="442cc68d:ScopeViewTreeModel$RootNode" />
-            </path>
-            <path>
-              <item name="project-intranet" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="C:\Users\Imagina\Documents\project-intranet" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="project-intranet" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="C:\Users\Imagina\Documents\project-intranet" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="layouts" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="project-intranet" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="C:\Users\Imagina\Documents\project-intranet" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="layouts" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="pages" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="project-intranet" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="C:\Users\Imagina\Documents\project-intranet" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="router" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+  <component name="ProjectId" id="1dmjqXTHlqo6sPquMIV01BZSLbp" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/node_modules/@imagina/qchat/_store/conversationUser" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.path.for.package.eslint" value="project" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Imagina\Documents\project-intranet\node_modules\@imagina\qchat\_store\conversationUser" />
-      <recent name="C:\Users\Imagina\Documents\project-intranet\src\components\qevent\widgets" />
-      <recent name="C:\Users\Imagina\Documents\project-intranet\node_modules\@imagina\qevent\_layouts\admin\organizers" />
-      <recent name="C:\Users\Imagina\Documents\project-intranet\node_modules\@imagina\qevent\_layouts\admin\events" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Imagina\Documents\project-intranet\src\components\qblog" />
-    </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="c83755af-fec3-4f30-b4b7-e3256bbc249b" name="Default Changelist" comment="" />
-      <created>1557530369751</created>
+      <changelist id="abe86841-81fe-472b-9202-62b4e5a0ab23" name="Default Changelist" comment="" />
+      <created>1593037353626</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1557530369751</updated>
-      <workItem from="1557530372494" duration="720000" />
-      <workItem from="1564408321695" duration="754000" />
-      <workItem from="1564502790239" duration="16793000" />
-      <workItem from="1564582049659" duration="26990000" />
-      <workItem from="1564669858506" duration="1182000" />
-      <workItem from="1564672625063" duration="22436000" />
-      <workItem from="1564754174791" duration="8797000" />
-      <workItem from="1564844125215" duration="7575000" />
-      <workItem from="1565013363211" duration="4780000" />
-      <workItem from="1565099510934" duration="9218000" />
-      <workItem from="1565272284594" duration="595000" />
-      <workItem from="1565641804384" duration="10818000" />
-      <workItem from="1565703915992" duration="26405000" />
-      <workItem from="1565790493123" duration="11996000" />
-      <workItem from="1565876443352" duration="23439000" />
-      <workItem from="1565963795173" duration="18273000" />
-      <workItem from="1566053159638" duration="9021000" />
-      <workItem from="1566308512131" duration="13369000" />
-      <workItem from="1566395626002" duration="16272000" />
-      <workItem from="1566481683287" duration="21608000" />
-      <workItem from="1566828117690" duration="24280000" />
-      <workItem from="1566912490206" duration="24624000" />
-      <workItem from="1567000493645" duration="15689000" />
-      <workItem from="1567086730166" duration="13295000" />
-      <workItem from="1567173134034" duration="18611000" />
-      <workItem from="1567264041053" duration="3255000" />
-      <workItem from="1567434181119" duration="9251000" />
-      <workItem from="1567519922154" duration="12393000" />
-      <workItem from="1567606236388" duration="7810000" />
-      <workItem from="1567691487793" duration="9838000" />
-      <workItem from="1567778823215" duration="6408000" />
-      <workItem from="1567866769372" duration="2740000" />
-      <workItem from="1568037307418" duration="4623000" />
-      <workItem from="1568124119171" duration="593000" />
-      <workItem from="1568127465562" duration="1196000" />
-      <workItem from="1568156309079" duration="316000" />
-      <workItem from="1568215306596" duration="98000" />
-      <workItem from="1568219574545" duration="3107000" />
-      <workItem from="1568295446537" duration="2212000" />
-      <workItem from="1568383306986" duration="2071000" />
-      <workItem from="1568474961087" duration="599000" />
-      <workItem from="1568641781988" duration="6695000" />
-      <workItem from="1568729911610" duration="23627000" />
-      <workItem from="1568814767588" duration="11164000" />
+      <updated>1593037353626</updated>
+      <workItem from="1593037358095" duration="4122000" />
+      <workItem from="1593092721966" duration="3200000" />
     </task>
-    <task id="LOCAL-00001" summary=" + Update base to new base app v1.0">
-      <created>1564502930197</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1564502930197</updated>
-    </task>
-    <task id="LOCAL-00002" summary=" + Update readme">
-      <created>1564503000561</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1564503000561</updated>
-    </task>
-    <task id="LOCAL-00003" summary=" + Add dashboard&#10; + Add directory view">
-      <created>1564613163784</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1564613163784</updated>
-    </task>
-    <task id="LOCAL-00004" summary=" + Add calendary view without service in backend">
-      <created>1564613241626</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1564613241626</updated>
-    </task>
-    <task id="LOCAL-00005" summary=" + Add view news and new">
-      <created>1564613280836</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1564613280836</updated>
-    </task>
-    <task id="LOCAL-00006" summary=" + Add messenger">
-      <created>1564613298852</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1564613298852</updated>
-    </task>
-    <task id="LOCAL-00007" summary=" + Update directory layout and components">
-      <created>1564703120531</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1564703120531</updated>
-    </task>
-    <task id="LOCAL-00008" summary=" + Update new Layout and component">
-      <created>1564703153725</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1564703153725</updated>
-    </task>
-    <task id="LOCAL-00009" summary=" + Update calendary &#10; + Update New&#10; + Add module qchat (dev)">
-      <created>1564857044195</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1564857044195</updated>
-    </task>
-    <task id="LOCAL-00010" summary=" + Update grid Calendar">
-      <created>1564857152891</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1564857152891</updated>
-    </task>
-    <task id="LOCAL-00011" summary=" + Update Post Widget">
-      <created>1565798865122</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1565798865122</updated>
-    </task>
-    <task id="LOCAL-00012" summary=" + Update new and news pages">
-      <created>1565798894058</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1565798894058</updated>
-    </task>
-    <task id="LOCAL-00013" summary=" + Update user Widget">
-      <created>1565798913163</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1565798913163</updated>
-    </task>
-    <task id="LOCAL-00014" summary=" + update home layout">
-      <created>1565798942649</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1565798942649</updated>
-    </task>
-    <task id="LOCAL-00015" summary=" + add my notes widget component">
-      <created>1566321175102</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1566321175102</updated>
-    </task>
-    <task id="LOCAL-00016" summary=" + update implements of components calendary and events">
-      <created>1566321237356</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1566321237356</updated>
-    </task>
-    <task id="LOCAL-00017" summary=" + update recursive item">
-      <created>1566321256668</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1566321256668</updated>
-    </task>
-    <task id="LOCAL-00018" summary=" + update app.js, add modules for ecommerce">
-      <created>1566321289282</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1566321289282</updated>
-    </task>
-    <task id="LOCAL-00019" summary=" + update post and news layout components">
-      <created>1566321434396</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1566321434396</updated>
-    </task>
-    <task id="LOCAL-00020" summary=" + update css">
-      <created>1566321462913</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1566321462913</updated>
-    </task>
-    <task id="LOCAL-00021" summary=" + update user component, update sidebar and index layout">
-      <created>1566321507850</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1566321507850</updated>
-    </task>
-    <task id="LOCAL-00022" summary=" + update components in package.json">
-      <created>1566321529491</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1566321529491</updated>
-    </task>
-    <task id="LOCAL-00023" summary=" + Add birthday component">
-      <created>1566429827771</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1566429827771</updated>
-    </task>
-    <task id="LOCAL-00024" summary=" + update how the fields are being displayed, a function of the qhelper that puts this data to a higher level is being used, this to facilitate access to the template">
-      <created>1566429904721</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1566429904721</updated>
-    </task>
-    <task id="LOCAL-00025" summary=" + fix console error with image not found, &#10; + add un read messages in chat">
-      <created>1566513398415</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1566513398415</updated>
-    </task>
-    <task id="LOCAL-00026" summary=" + disable chat">
-      <created>1566602036842</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1566602036842</updated>
-    </task>
-    <task id="LOCAL-00027" summary=" + Enable chat">
-      <created>1566861936319</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1566861936319</updated>
-    </task>
-    <task id="LOCAL-00028" summary=" + Update image for empty content in calendary">
-      <created>1567270199912</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1567270199913</updated>
-    </task>
-    <task id="LOCAL-00029" summary=" + Add widget for notifications">
-      <created>1568666343201</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1568666343201</updated>
-    </task>
-    <option name="localTasksCounter" value="30" />
     <servers />
-  </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="456194000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="-1928" y="-223" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1359275" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.21404682" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32998884" />
-      <window_info anchor="bottom" id="Version Control" order="11" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" />
-    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value=" + Add view news and new" />
-    <MESSAGE value=" + Add messenger" />
-    <MESSAGE value=" + Update directory layout and components" />
-    <MESSAGE value=" + Update new Layout and component" />
-    <MESSAGE value=" + Update calendary &#10; + Update New&#10; + Add module qchat (dev)" />
-    <MESSAGE value=" + Update grid Calendar" />
-    <MESSAGE value=" + Update Post Widget" />
-    <MESSAGE value=" + Update new and news pages" />
-    <MESSAGE value=" + Update user Widget" />
-    <MESSAGE value=" + update home layout" />
-    <MESSAGE value=" + add my notes widget component" />
-    <MESSAGE value=" + update implements of components calendary and events" />
-    <MESSAGE value=" + update recursive item" />
-    <MESSAGE value=" + update app.js, add modules for ecommerce" />
-    <MESSAGE value=" + update post and news layout components" />
-    <MESSAGE value=" + update css" />
-    <MESSAGE value=" + update user component, update sidebar and index layout" />
-    <MESSAGE value=" + update components in package.json" />
-    <MESSAGE value=" + Add birthday component" />
-    <MESSAGE value=" + update how the fields are being displayed, a function of the qhelper that puts this data to a higher level is being used, this to facilitate access to the template" />
-    <MESSAGE value=" + fix console error with image not found, &#10; + add un read messages in chat" />
-    <MESSAGE value=" + disable chat" />
-    <MESSAGE value=" + Enable chat" />
-    <MESSAGE value=" + Update image for empty content in calendary" />
-    <MESSAGE value=" + Add widget for notifications" />
-    <option name="LAST_COMMIT_MESSAGE" value=" + Add widget for notifications" />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/plugins/notification.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="5" column="18" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/@imagina/quser/_crud/roles.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="65" column="25" selection-start-line="65" selection-start-column="25" selection-end-line="65" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/@imagina/quser/_layouts/admin/roles/index.vue">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/statics/logo.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/quasar.conf.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="788">
-          <caret line="59" column="10" selection-start-line="59" selection-start-column="10" selection-end-line="59" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugins/axios.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/i18n/en-us/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/@imagina/qnote/_components/admin/notes/widgets/note.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="11" column="24" lean-forward="true" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/@imagina/qnote/_components/admin/notes/index.vue">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.template.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugins/globalComponents.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="13" column="23" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/@imagina/qevent/_layouts/admin/categories/index.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/@imagina/qhelper/_services/baseService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="8" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/layouts/pages/calendary.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2304">
-          <caret line="163" column="18" selection-start-line="163" selection-start-column="13" selection-end-line="163" selection-end-column="18" />
-          <folding>
-            <element signature="n#div#0;n#q-tab-pane#0;n#q-tabs#0;n#div#0;n#template#0;n#!!top" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#q-tab-pane#0;n#q-tabs#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/@imagina/qblog/_crud/posts.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3936">
-          <caret line="164" column="58" selection-start-line="164" selection-start-column="58" selection-end-line="164" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/@imagina/qchat/_config/apiRoutes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="10" column="10" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/layouts/404.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="1" column="14" lean-forward="true" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/@imagina/qchat/_store/conversation/actions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="1" column="16" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/@imagina/qchat/_store/conversation/mutations.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="1" column="26" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/@imagina/qcommerce/_layouts/admin/coupons/form.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="241" column="8" selection-start-line="241" selection-start-column="8" selection-end-line="257" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/@imagina/qchat/_layouts/admin/messages/index.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="8" column="26" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/@imagina/qchat/_components/admin/conversation.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="214" column="44" selection-start-line="214" selection-start-column="44" selection-end-line="214" selection-end-column="44" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#picker#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="e#3042#3183#0" />
-            <element signature="e#3557#3819#0" />
-            <element signature="e#3873#4359#0" />
-            <element signature="e#4404#5209#0" />
-            <element signature="e#5234#5384#0" />
-            <element signature="e#5406#5475#0" />
-            <element signature="e#5505#5597#0" />
-            <element signature="e#5820#6263#0" />
-            <element signature="e#6316#6697#0" />
-            <element signature="e#6721#6969#0" />
-            <element signature="n#style#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/@imagina/qchat/_components/admin/myConversations.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="109" column="71" selection-start-line="109" selection-start-column="57" selection-end-line="109" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/quser/widgets/users.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="24" column="24" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/quser/userProfile.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/quser/userProfileModal.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/layouts/index.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="10" column="19" lean-forward="true" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/config/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/basequasar-app/src/config/app.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/layouts/app/config.vue">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/@imagina/qchat/_components/admin/labelConversation.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
-          <caret line="20" column="35" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/i18n/en-us/ui.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="60" column="32" selection-start-line="66" selection-start-column="4" selection-end-line="66" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/basequasar-app/src/i18n/en-us/ui.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="69" column="27" selection-start-line="69" selection-start-column="27" selection-end-line="69" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/i18n/es/ui.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="65" column="15" selection-start-line="65" selection-start-column="4" selection-end-line="65" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/basequasar-app/src/i18n/es/ui.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
-          <caret line="69" column="29" selection-start-line="69" selection-start-column="29" selection-end-line="69" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/basequasar-app/src/components/master/admin/header.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
-          <folding>
-            <element signature="e#1979#2043#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/master/admin/header.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="23" selection-start-line="23" selection-end-line="24" selection-end-column="18" />
-          <folding>
-            <element signature="e#2210#2274#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/config/pages/application.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1676">
-          <caret line="88" column="4" lean-forward="true" selection-start-line="33" selection-start-column="2" selection-end-line="88" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/basequasar-app/src/config/pages/application.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2012">
-          <caret line="88" column="4" selection-start-line="88" selection-start-column="4" selection-end-line="88" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/config/sidebar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="524">
-          <caret line="42" selection-start-line="42" selection-end-line="44" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/basequasar-app/src/config/sidebar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="644">
-          <caret line="44" column="22" selection-start-line="44" selection-start-column="22" selection-end-line="44" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/layouts/master.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="20" />
-          <folding>
-            <element signature="e#437#497#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/i18n/en-us/sidebar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/i18n/es/sidebar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="1" selection-start-line="1" selection-end-line="7" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/basequasar-app/src/i18n/es/sidebar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="3" column="33" lean-forward="true" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/basequasar-app/src/layouts/master.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/master/recursiveItem.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="620">
-          <caret line="101" column="8" lean-forward="true" selection-start-line="70" selection-end-line="101" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/basequasar-app/src/components/master/recursiveItem.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="740">
-          <caret line="47" column="14" lean-forward="true" selection-start-line="47" selection-start-column="14" selection-end-line="47" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/project-intranet/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="38" column="4" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="38" column="34" selection-start-line="38" selection-start-column="34" selection-end-line="38" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
+  <component name="WindowStateProjectService">
+    <state x="490" y="27" key="CommitChangelistDialog2" timestamp="1593102180135">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="490" y="27" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1593102180135" />
   </component>
 </project>

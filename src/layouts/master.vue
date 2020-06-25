@@ -1,93 +1,73 @@
 <template>
-  <q-layout :view="(appIsBackend || $q.platform.is.mobile) ? 'lHh LpR lff' : 'lhh LpR lFr'"
-            :class="appIsBackend ? 'bg-grey-1' : ''"
-            v-if="$store.state.app.active">
-    <!-- HEADER -->
-    <admin-header v-if="appIsBackend" />
-    <frontend-header v-else />
+  <q-layout view="lhh LpR lff">
+    <!--Maintenance Page-->
+    <maintenance-page v-if="inMaintenance"/>
+    <!--Master estructure-->
+    <div v-else>
+      <!-- HEADER -->
+      <header-component v-if="appState.loadPage"/>
 
-    <!-- ROUTER VIEW -->
-    <q-page-container>
-      <router-view :class="appIsBackend ? 'q-layout-page layout-padding' : ''" />
-    </q-page-container>
+      <!-- ROUTER VIEW -->
+      <q-page-container>
+        <router-view v-if="appState.loadPage"/>
+      </q-page-container>
 
-    <!-- FOOTER -->
-    <admin-footer v-if="appIsBackend" />
-    <frontend-footer v-else />
+      <!-- FOOTER -->
+      <footer-componen v-if="appState.loadPage"/>
+
+      <!--modal-login-->
+      <modal-auth/>
+    </div>
   </q-layout>
 </template>
 
 <script>
   /*Components*/
-  import adminHeader from 'src/components/master/admin/header'
-  import adminFooter from 'src/components/master/admin/footer'
-  import frontendHeader from 'src/components/master/frontend/header'
-  import frontendFooter from 'src/components/master/frontend/footer'
+  import maintenancePage from '@imagina/qsite/_pages/master/maintenance'
+  import headerComponent from 'src/modules/app/_components/header'
+  import footerComponen from 'src/modules/app/_components/footer'
+  import modalAuth from '@imagina/quser/_components/auth/modal-form'
 
   export default {
     meta() {
       let routetitle = ((this.$route.meta && this.$route.meta.title) ? this.$route.meta.title : '')
-      let siteName = this.$store.getters['qsiteSettings/getSettingValueByName']('core::site-name')
-      let iconHref = this.$store.getters['qsiteSettings/getSettingMediaByName']('isite::favicon').path
+      if (this.$route.meta && this.$route.meta.headerTitle) routetitle = this.$route.meta.headerTitle
+      let siteName = this.$store.getters['qsiteApp/getSettingValueByName']('core::site-name')
+      let siteDescription = this.$store.getters['qsiteApp/getSettingValueByName']('core::site-description')
+      let iconHref = this.$store.getters['qsiteApp/getSettingMediaByName']('isite::favicon').path
+
       return {
-        title: `${siteName} | ${this.$tr(routetitle)}`,
+        title: `${this.$tr(routetitle)} | ${siteName}`,
+        meta: {
+          description: {name: 'description', content: siteDescription || siteName},
+        },
         link: [{rel: 'icon', href: iconHref, id: 'icon'}],
       }
     },
-    beforeRouteLeave(to, from, next) {
-      next()
+    components: {maintenancePage, headerComponent, footerComponen, modalAuth},
+    beforeDestroy() {
+      this.$eventBus.$off('global-event-test')
     },
-    components: {
-      adminHeader, adminFooter,
-      frontendHeader, frontendFooter
-    },
-    mounted() {
-      this.$nextTick(async function () {
-        //Call to config when is mounted
-        let params = this.$route.params
+    created() {
+      this.$nextTick(function () {
       })
     },
     data() {
-      return {
-        appIsBackend: config('app.isBackend')
-      }
+      return {}
     },
     computed: {
-      showApp() {
-        return this.$store.state.app.show
+      inMaintenance() {
+        return this.$store.getters['qsiteApp/getSettingValueByName']('isite::maintenancePage')
       },
+      appState() {
+        return this.$store.state.qsiteApp
+      }
     },
     methods: {
-      isInStandaloneMode() {
-        (window.matchMedia('(display-mode: standalone)').matches) || (window.navigator.standalone);
-      },
+      async refreshPage(done) {
+        await this.$store.dispatch('qsiteApp/REFRESH_PAGE')
+        done()
+      }
     }
   }
 </script>
-
-<style lang="stylus">
-  @import "~variables";
-
-  #list_menu
-    .q-icon
-      font-size: 16px
-
-    .q-item-side
-      min-width 20px !important
-
-  .q-item-main
-    font-size: 15px !important
-
-  #menu_leads
-    .q-item
-      padding: 8px 0px
-
-  .q-item-side
-    min-width: auto
-
-  .border-content
-    border 2px solid $grey-4
-    border-radius 3px
-
-
-</style>

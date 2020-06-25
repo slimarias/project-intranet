@@ -1,44 +1,47 @@
+import coreApp from '@imagina/qsite/_config/master/app'
+
 export default {
-  version: '1.0.0',
-  isBackend : true, //Define if project is to admin
+  ...coreApp,
+  //isBackend : false, //Define if project is to admin
+  //forceRoleAndDepartment : false,//Force to select role and department
   //UI Languages
-  languages : {
+  /*languages : {
     default : 'es',
-    availables : ['en-us', 'es']
-  },
+    availables : ['en-us','es']
+  },*/
   //Modules
   modules : [
-    'qhelper',
     'qcrud',
-    'qchat',
     'quser',
     'qblog',
-    'qevent',
-    'qnotification',
     'qcommerce',
-    //'qplace',
+    'qplace',
+    'qform',
     'qmenu',
     'qmedia',
     'qslider',
+    'qbanner',
     'qsite',
-    'qnote',
+    'app'
   ],
-  //Storage
-  saveStorage : {
+  //Cache
+  /*saveCache : {
     refresh : [
       'sessionData',
-      'offlineRequests',
-      'notifications',
       'auth.department.id',
       'auth.role.id',
-      'redirect.to.from.login',
       'site.default.locale',
-      'dataAddress',
-      'impersonatorData'
+      'impersonatorData',
+      'app.state.extra',
+      'app.state.filters'
     ],
     logout : [
       'offlineRequests',
       'site.default.locale',
     ]
-  }
+  },*/
+  //Reset Store
+  /*resetStores : [
+    'quserAuth/RESET'
+  ]*/
 }
