@@ -1,0 +1,140 @@
+<template>
+	<div class="row">
+		<div class="col-12 q-px-sm q-py-sm">
+			<q-input filled v-model="search" label="Label">
+				<template v-slot:control>
+					<div class="self-center full-width no-outline" tabindex="0">{{search}}</div>
+				</template>
+				<template v-slot:append>
+					<q-icon v-if="search !== ''" name="close" class="cursor-pointer" @click="search = ''"/>
+					<q-icon name="search" />
+				</template>
+			</q-input>
+		</div>
+		<div
+			v-for="(user, key) in users"
+			:key="key"
+			class="col-xs-12 col-sm-12 col-lg-6 q-px-sm q-py-sm">
+			<q-card class="my-card">
+				<q-card-section >
+					<div class="container">
+						<div class="user-image flex flex-center">
+							<q-avatar size="150px">
+								<q-img :src="user.mainImage" />
+							</q-avatar>
+						</div>
+						<div class="user-info flex items-center">
+							<div class="block">
+								<div class="col-12">
+									<div>
+										<div>
+											<q-icon color="primary" name="person" size="xs" />
+											{{user.fullName}}
+										</div>
+									</div>
+									<div>
+										<div>
+											<q-icon color="primary" name="mail" size="xs" />
+											{{user.email}}
+										</div>
+									</div>
+								</div>
+							</div>
+							<userProfileModal :user="user" class="absolute-bottom-right q-pa-sm"/>
+						</div>
+					</div>
+				</q-card-section>
+			</q-card>
+		</div>
+	</div>
+</template>
+
+<script>
+  import userProfileModal from "./userProfileModal";
+
+  export default {
+    name: "usersDirectory",
+    components:{
+      userProfileModal
+    },
+    data(){
+      return{
+        loading: false,
+        users: [],
+        page: 1,
+        take: 20,
+        lastPage: 1,
+        search: '',
+      }
+    },
+	  watch:{
+      search: function () {
+	      this.users = []
+        this.page = 1
+        this.take = 20
+        this.lastPage = 1
+	      this.getUsers()
+      }
+	  },
+    mounted() {
+      this.$nextTick( () => {
+        this.getUsers()
+      })
+    },
+    methods:{
+      getUsers(){
+        this.loading = true
+        const params = {
+          params: {
+            filter: {
+              search: this.search
+            },
+            include: 'addresses',
+            page: this.page,
+            take: this.take,
+          }
+        }
+        this.$crud.index('apiRoutes.quser.users', params)
+          .then( response => {
+            this.users.push(...response.data)
+            this.take = response.meta.page.perPage
+            this.lastPage = response.meta.page.lastPage
+            this.loading = false
+          })
+          .catch( error => {
+            this.$alert.error({message: this.$tr('ui.message.errorRequest'), pos: 'bottom'})
+            this.loading = false
+          })
+      },
+      getMorePosts(){
+        this.page = this.page + 1
+        this.getUsers()
+      },
+    }
+  }
+</script>
+
+<style scoped>
+	.container{
+		display: grid;
+		grid-template-columns: 200px 1fr;
+	}
+	.user-image{
+		grid-column-end: span 1;
+	}
+	.user-info{
+		grid-column-end: span 1;
+	}
+	@media screen and (max-width: 768px) {
+		.container{
+			display: grid;
+			grid-template-columns: 1fr;
+			grid-template-rows: 1fr;
+			grid-gap: 15px;
+		}
+		.user-info{
+			grid-column-end: span 1;
+			grid-row-end: span 1;
+		}
+	}
+</style>
