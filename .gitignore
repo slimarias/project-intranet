@@ -9,6 +9,7 @@
 !/src-pwa
 !/src-ssr
 !.env-example
+!/.idea
 
 #other fields
 !/.gitignore
