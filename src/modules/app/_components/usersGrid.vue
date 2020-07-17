@@ -1,18 +1,25 @@
 <template>
 	<div class="row">
-		<div v-for="(user, key) in users" :key="key" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 q-mb-md">
+		<div v-for="(user, key) in users" :key="key" class="col-xs-6 col-sm-6 col-md-4 col-lg-3 q-mb-md">
 			<div class="flex flex-center q-mx-md q-my-md">
-				<q-avatar size="100px">
+				<q-avatar size="100px" class="relative-position">
 					<q-img :src="user.mainImage" :ratio="1" />
+					<q-btn
+						round
+						size="xs"
+						color="primary"
+						class="absolute-bottom-right">
+						<q-icon name="fas fa-external-link-alt"/>
+					</q-btn>
 				</q-avatar>
 			</div>
-			<div class="flex flex-center">
-				{{user.fullName}}
+			<div class="flex justify-center text-grey-7 text-bold text-caption">
+				{{ (user.fullName).substr(0,15)}}
 			</div>
-			<div class="flex flex-center">
+			<div class="flex flex-center" v-if="false">
 				<hr width="25%">
 			</div>
-			<div class="flex flex-center">
+			<div class="flex flex-center" v-if="false">
 				<userProfileModal :user="user"/>
 			</div>
 		</div>
@@ -27,6 +34,10 @@
 	  components:{
       userProfileModal
 	  },
+    limit:{
+      type: String,
+      default: '8'
+    },
 	  data(){
       return{
         loading: false,
@@ -49,7 +60,7 @@
             filter: {},
 	          include: 'addresses',
             page: this.page,
-            take: this.take,
+            take: 8,
           }
         }
         this.$crud.index('apiRoutes.quser.users', params)
@@ -73,4 +84,5 @@
 </script>
 
 <style scoped>
+
 </style>

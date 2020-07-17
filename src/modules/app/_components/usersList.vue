@@ -1,21 +1,39 @@
 <template>
-	<q-list bordered>
-		<q-item v-for="user in users" :key="user.id" class="q-my-sm" clickable v-ripple>
+	<q-list>
+		<q-item v-for="user in users" :key="user.id" class="q-my-sm">
 			<q-item-section avatar>
-				<q-avatar>
+				<q-avatar size="50px">
 					<q-img :src="user.mainImage" :ratio="1"/>
 				</q-avatar>
 			</q-item-section>
 			<q-item-section>
-				<q-item-label>{{ user.name }}</q-item-label>
-				<q-item-label caption lines="1">{{ user.email }}</q-item-label>
+				<q-item-label caption>
+					11:04
+				</q-item-label>
+				<q-item-label>
+					{{ user.fullName }}
+				</q-item-label>
+				<q-item-label caption class="line-clamp">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. A asperiores autem cum...
+				</q-item-label>
 			</q-item-section>
+			
+			<q-item-section top side>
+				<div class="text-grey-8 q-gutter-xs">
+					<q-btn class="gt-xs" size="12px" flat dense round icon="more_vert" />
+				</div>
+			</q-item-section>
+				
 		</q-item>
 	</q-list>
 </template>
 
 <script>
   export default {
+    limit:{
+      type: String,
+      default: '4'
+    },
     data () {
       return {
         loading: false,
@@ -38,7 +56,7 @@
             filter: {},
             include: 'addresses',
             page: this.page,
-            take: this.take,
+            take: 5,
           }
         }
         this.$crud.index('apiRoutes.quser.users', params)
@@ -62,5 +80,10 @@
 </script>
 
 <style scoped>
-
+	.line-clamp {
+		display: -webkit-box;
+		-webkit-line-clamp: 3;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
+	}
 </style>

@@ -1,34 +1,113 @@
 <template>
-  <q-page>
+  <q-page class="container-main">
 	  
-	  <div class="row">
-		  <div class="col-12">
-			 
+	  <q-card class="relative-position custom-border-radius q-pa-md">
+		  <div class="text-body1 text-grey-6 text-bold q-py-md q-ml-sm q-mr-xl border-botton-grey">
+			  NOTICIAS RECIENTES
 		  </div>
-	  </div>
-	  
+		  <q-btn
+			  round
+			  color="primary"
+			  class="absolute-top-right q-mt-lg q-mr-lg btn-shadow">
+			  <q-icon
+				  name="far fa-newspaper"
+				  size="xs"/>
+		  </q-btn>
+		  <div class="q-mx-sm q-mt-lg">
+			 <postsGrid />
+		  </div>
+	  </q-card>
+	
+	  <q-card class="relative-position custom-border-radius q-pa-md">
+		
+		  <div class="text-body1 text-grey-6 text-bold q-py-md q-ml-sm q-mr-xl border-botton-grey">
+			  CALENDARIO DE EVENTOS
+		  </div>
+		  <q-btn
+			  round
+			  color="primary"
+			  class="absolute-top-right q-mt-lg q-mr-lg btn-shadow">
+			  <q-icon
+				  name="fas fa-calendar-alt"
+				  size="xs"/>
+		  </q-btn>
+		  <div class="q-mx-sm q-mt-md">
+		
+		  </div>
+	  </q-card>
+	
+	  <q-card class="relative-position custom-border-radius q-pa-md">
+		  <div class="text-body1 text-grey-6 text-bold q-py-md q-ml-sm q-mr-xl border-botton-grey">
+			  MENSAJERÍA
+		  </div>
+		  <q-btn
+			  round
+			  color="primary"
+			  class="absolute-top-right q-mt-lg q-mr-lg btn-shadow">
+			  <q-icon
+				  name="far fa-comments"
+				  size="xs"/>
+		  </q-btn>
+		  <div class="q-mx-sm q-mt-md">
+				<usersList />
+		  </div>
+	  </q-card>
+	
+	  <q-card class="relative-position custom-border-radius q-pa-md">
+		  <div class="text-body1 text-grey-6 text-bold q-py-md q-ml-sm q-mr-xl border-botton-grey">
+			  DIRECTORIO
+		  </div>
+		  <q-btn
+			  round
+			  color="primary"
+			  class="absolute-top-right q-mt-lg q-mr-lg btn-shadow">
+			  <q-icon
+				  name="fas fa-user-friends"
+				  size="xs"/>
+		  </q-btn>
+		  <div class="q-mx-sm q-mt-md">
+				<usersDirectory/>
+		  </div>
+	  </q-card>
 	  
   </q-page>
 </template>
 
-<style lang="stylus">
-
-</style>
-
 <script>
-	import posts from "../../_components/postsList";
 	import postsGrid from "../../_components/postsGrid";
-	
+	import usersDirectory from "../../_components/usersGrid";
 	import usersList from "../../_components/usersList";
-	import usersGrid from "../../_components/usersGrid";
 	
   export default {
-    name: 'PageIndex',
 	  components:{
-      posts,
       postsGrid,
-      usersList,
-      usersGrid,
+      usersDirectory,
+      usersList
 	  }
   }
 </script>
+
+<style>
+	.container-main{
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+		grid-gap: 40px;
+	}
+	.btn-shadow{
+		box-shadow: 0px 0px 15px 0px var(--q-color-primary);
+	}
+	.custom-border-radius{
+		border-radius: 15px
+	}
+	.border-botton-grey{
+		border-bottom: 1px solid #9e9e9e52
+	}
+	@media screen and (max-width: 768px) {
+		.container-main{
+			grid-template-columns: repeat(1, 1fr);
+			grid-template-rows: auto;
+			grid-gap: 10px;
+		}
+	}
+</style>

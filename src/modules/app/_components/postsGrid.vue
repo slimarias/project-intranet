@@ -6,7 +6,7 @@
 				   :key="key"
 				   @click.prevent="redirectTo(post)">
 					<figure class="post-image">
-						<q-img :src="post.mainImage.path" :ratio="1"/>
+						<q-img :src="post.mainImage.path" :ratio="1" class="rounded-borders custom-border-radius"/>
 					</figure>
 					<div class="post-overlay">
 						<p>
@@ -15,14 +15,12 @@
 							</span>
 						</p>
 					</div>
-					<div class="post-info q-pt-sm text-grey-10 line-clamp q-px-sm">
-						{{ post.summary }}
-					</div>
-					<div class="post-info-date q-pt-sm text-caption text-grey-7 q-px-sm q-pb-sm">
+					<div class="post-info-date q-pt-sm text-caption text-grey-5 q-px-sm">
 						{{ post.createdAt | date }}
 					</div>
-					
-					
+					<div class="post-info  text-grey-7 line-clamp q-px-sm">
+						{{ post.summary }}
+					</div>
 				</a>
 			</section>
 		</div>
@@ -35,8 +33,8 @@
 			/>
 		</div>
 		
-		<div class="col-12 flex flex-center q-mb-md" v-if="!(this.page >= this.lastPage) && !loading">
-			<q-btn color="primary" outline @click="getMorePosts">
+		<div class="col-12 flex flex-center q-mb-md q-mt-lg" v-if="!(this.page >= this.lastPage) && !loading">
+			<q-btn color="primary" class="btn-shadow" rounded @click="getMorePosts">
 				{{btnMoreLabel}}
 			</q-btn>
 		</div>
@@ -50,13 +48,21 @@
   export default {
     name: "postsGrid",
     props: {
+      redirectToPost:{
+        type: Boolean,
+        default: true
+      },
+      limit:{
+        type: String,
+	      default: '3'
+      },
       categories: {
         type: Array,
         default: () => []
       },
       btnMoreLabel: {
         type: String,
-        default: 'Mas'
+        default: 'Ver Mas'
       }
     },
     data() {
@@ -88,7 +94,7 @@
             },
             include: 'category',
             page: this.page,
-            take: this.take,
+            take: this.limit,
           }
         }
         this.$crud.index('apiRoutes.qblog.posts', params)
@@ -105,6 +111,16 @@
           })
       },
       getMorePosts(){
+        if(this.redirectToPost){
+          const defaultCategory  = 1
+          this.$router.push({
+            name: 'qblog.index',
+            params:{
+              category: defaultCategory
+            }
+          })
+          return
+        }
         this.page = this.page + 1
         this.getPosts()
       },
@@ -169,7 +185,7 @@
 	@media screen and (max-width: 768px) {
 		.post-list{
 			grid-gap: 3px;
-			grid-template-columns: repeat(2, minmax(100px, 250px));
+			grid-template-columns: repeat(3, minmax(100px, 250px));
 		}
 	}
 </style>
