@@ -22,7 +22,8 @@ export default {
     'qslider',
     'qbanner',
     'qsite',
-    'app'
+    'app',
+    'qintranet'
   ],
   //Cache
   /*saveCache : {
