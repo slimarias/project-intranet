@@ -22,6 +22,7 @@ export default {
     'qslider',
     'qbanner',
     'qsite',
+    'qchat',
     'app',
     'qintranet'
   ],
