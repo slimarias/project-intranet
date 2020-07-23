@@ -2,105 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c83755af-fec3-4f30-b4b7-e3256bbc249b" name="Default Changelist" comment=" + Add widget for notifications">
-      <change beforePath="$PROJECT_DIR$/.babelrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env-example" beforeDir="false" afterPath="$PROJECT_DIR$/.env-example" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/env.js" beforeDir="false" afterPath="$PROJECT_DIR$/env/env.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quasar.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/quasar.conf.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src-pwa/custom-service-worker.js" beforeDir="false" afterPath="$PROJECT_DIR$/src-pwa/custom-service-worker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src-pwa/register-service-worker.js" beforeDir="false" afterPath="$PROJECT_DIR$/src-pwa/register-service-worker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/sad.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/404.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/commentsFB.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/master/admin/footer.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/master/admin/header.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/master/configList.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/master/dynamicField.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/master/frontend/footer.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/master/frontend/header.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/master/imaginaSVG.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/master/innerLoading.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/master/recursiveItem.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/master/recursiveListSelect.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/master/schedules.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/notResults.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/qblog/grid-posts.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/qblog/list-categories-children.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/qblog/list-categories.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/qblog/widgets/posts.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/qevent/event.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/qevent/eventModal.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/qevent/gridCalendar.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/qevent/widgets/birthdays.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/qevent/widgets/events.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/quser/userProfile.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/quser/userProfileModal.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/quser/widgets/users.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/uploadImage.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/apiRoutes/api.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/apiRoutes/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/pages/application.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/pages/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/sidebar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/sidebar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/app.styl" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/app.styl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/themes/common.variables.styl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/themes/variables.ios.styl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/themes/variables.mat.styl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/i18n/en-us/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/i18n/en-us/sidebar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/i18n/en-us/ui.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/i18n/es/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/i18n/es/sidebar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/i18n/es/ui.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/i18n/formats/currencyFormats.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/i18n/formats/customFormats.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/i18n/formats/dateTimeFormats.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/i18n/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.template.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.template.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/404.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/app/config.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/blank.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/config.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/index.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/master.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/master.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/pages/calendary.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/pages/directory.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/pages/messenger.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/pages/new.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/pages/news.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/plugins/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/plugins/auth.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/plugins/axios.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/plugins/clone.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/plugins/crud.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/plugins/globalComponents.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/plugins/helper.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/plugins/i18n.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/plugins/moment.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/plugins/notification.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/plugins/vuelidate.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/router/middlewares/config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/router/routes.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/application/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/statics/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/app/actions.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/app/getters.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/app/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/app/mutations.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/app/state.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/findValue.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@imagina/qintranet/_components/qevent/widgets/eventsGrid.vue" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@imagina/qintranet/_components/qevent/widgets/eventsGrid.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@imagina/qintranet/_pages/admin/dashboard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@imagina/qintranet/_pages/admin/dashboard.vue" afterDir="false" />
     </list>
+    <list id="4127595b-1ef9-49cf-b0a2-992c5e52b296" name="Revert &quot; + Add widget for notifications&quot;" comment="Revert &quot; + Add widget for notifications&quot;&#10;&#10;This reverts commit efdf111d" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -121,9 +28,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/src/modules/app/_components/posts.vue" root0="SKIP_INSPECTION" />
-  </component>
   <component name="ProjectId" id="1dmjqXTHlqo6sPquMIV01BZSLbp" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -134,29 +38,215 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/node_modules/@imagina/qintranet/_components/qblog" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Users\Slim\Documents\web\project-intranet\node_modules\@imagina\qintranet\_components" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Users\Slim\Documents\web\project-intranet\node_modules\@imagina\qintranet\_components\qblog" />
+      <recent name="D:\Users\Slim\Documents\web\project-intranet\node_modules\@imagina\qintranet\_pages\admin" />
+      <recent name="D:\Users\Slim\Documents\web\project-intranet" />
+      <recent name="D:\Users\Slim\Documents\web\project-intranet\node_modules\@imagina" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="abe86841-81fe-472b-9202-62b4e5a0ab23" name="Default Changelist" comment="" />
+      <changelist id="c83755af-fec3-4f30-b4b7-e3256bbc249b" name="Default Changelist" comment=" + Add widget for notifications" />
       <created>1593037353626</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1593037353626</updated>
       <workItem from="1593037358095" duration="4122000" />
       <workItem from="1593092721966" duration="3200000" />
+      <workItem from="1595006920892" duration="3117000" />
+      <workItem from="1595090703154" duration="1191000" />
+      <workItem from="1595334051129" duration="3000" />
+      <workItem from="1595334063787" duration="6456000" />
+      <workItem from="1595418683152" duration="21090000" />
+      <workItem from="1595501959880" duration="8919000" />
     </task>
+    <task id="LOCAL-00001" summary="New Components">
+      <created>1595019426816</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1595019426817</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Changes in news components">
+      <created>1595427466528</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1595427466528</updated>
+    </task>
+    <task id="LOCAL-00003" summary=" + Add widget for notifications">
+      <created>1595428402273</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1595428402274</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Changes in news components">
+      <created>1595428617221</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1595428617221</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Changes in news components">
+      <created>1595428754953</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1595428754953</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Changes in news and user profile components">
+      <created>1595430161169</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1595430161169</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Changes in news and user profile components">
+      <created>1595430441282</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1595430441282</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Changes in news and user profile components">
+      <created>1595430690335</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1595430690335</updated>
+    </task>
+    <task id="LOCAL-00009" summary="FIX: Users Directory, Messages and Events">
+      <created>1595504881502</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1595504881502</updated>
+    </task>
+    <task id="LOCAL-00010" summary="FIX: Directory Section Design">
+      <created>1595507676083</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1595507676083</updated>
+    </task>
+    <task id="LOCAL-00011" summary="User Directory modal in dashboard">
+      <created>1595508869781</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1595508869781</updated>
+    </task>
+    <task id="LOCAL-00012" summary="FIX: Menu design">
+      <created>1595512817365</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1595512817365</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Menu Icon colors">
+      <created>1595513520443</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1595513520443</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="OPEN_TABS">
+      <set>
+        <option value="1" />
+      </set>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="New Components" />
+    <MESSAGE value=" + Add widget for notifications" />
+    <MESSAGE value="Changes in news components" />
+    <MESSAGE value="Changes in news and user profile components" />
+    <MESSAGE value="FIX: Users Directory, Messages and Events" />
+    <MESSAGE value="FIX: Directory Section Design" />
+    <MESSAGE value="User Directory modal in dashboard" />
+    <MESSAGE value="FIX: Menu design" />
+    <MESSAGE value="Menu Icon colors" />
+    <option name="LAST_COMMIT_MESSAGE" value="Menu Icon colors" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="490" y="27" key="CommitChangelistDialog2" timestamp="1593102180135">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="490" y="27" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1593102180135" />
+    <state x="490" y="27" key="CommitChangelistDialog2" />
+    <state x="490" y="27" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" />
   </component>
 </project>
