@@ -23,6 +23,7 @@ export default {
     'qbanner',
     'qsite',
     'qchat',
+    'qevent',
     'app',
     'qintranet'
   ],
