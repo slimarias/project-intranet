@@ -21,5 +21,5 @@ let responsePages = {
 //======= Add or update pages
 //#example: responsePages.<title-page> = <'title'>
 
-//responsePages.app.home.page = () => import('src/modules/app/_pages/frontend/index')
+responsePages.app.home.page = () => import('@imagina/qintranet/_pages/admin/dashboard')
 export default responsePages

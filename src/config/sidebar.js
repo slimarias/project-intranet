@@ -3,7 +3,7 @@ import pages from 'src/config/pages' // Get Pages from config
 //Add items tu sidebar
 console.log(pages)
 let responseSidebar = [
-  //...coreSidebar,
+  ...coreSidebar,
   //Add here more sidebar elements. #Example
   /*{
   title: "title",

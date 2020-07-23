@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c83755af-fec3-4f30-b4b7-e3256bbc249b" name="Default Changelist" comment=" + Add widget for notifications">
+    <list default="true" id="c83755af-fec3-4f30-b4b7-e3256bbc249b" name="Default Changelist" comment="Menu for admin">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@imagina/qintranet/_components/qevent/widgets/eventsGrid.vue" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@imagina/qintranet/_components/qevent/widgets/eventsGrid.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@imagina/qintranet/_pages/admin/dashboard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@imagina/qintranet/_pages/admin/dashboard.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@imagina/qevent/_config/sidebar.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@imagina/qevent/_config/sidebar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@imagina/qevent/_crud/crudQeventEvents.vue" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@imagina/qevent/_crud/crudQeventEvents.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@imagina/qintranet/_components/usersGrid.vue" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@imagina/qintranet/_components/usersGrid.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/pages.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/pages.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/sidebar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/sidebar.js" afterDir="false" />
     </list>
     <list id="4127595b-1ef9-49cf-b0a2-992c5e52b296" name="Revert &quot; + Add widget for notifications&quot;" comment="Revert &quot; + Add widget for notifications&quot;&#10;&#10;This reverts commit efdf111d" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -81,7 +84,7 @@
       <workItem from="1595334051129" duration="3000" />
       <workItem from="1595334063787" duration="6456000" />
       <workItem from="1595418683152" duration="21090000" />
-      <workItem from="1595501959880" duration="8919000" />
+      <workItem from="1595501959880" duration="9728000" />
     </task>
     <task id="LOCAL-00001" summary="New Components">
       <created>1595019426816</created>
@@ -174,7 +177,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595513520443</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Events in dashboard">
+      <created>1595513811968</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1595513811968</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -243,7 +253,8 @@
     <MESSAGE value="User Directory modal in dashboard" />
     <MESSAGE value="FIX: Menu design" />
     <MESSAGE value="Menu Icon colors" />
-    <option name="LAST_COMMIT_MESSAGE" value="Menu Icon colors" />
+    <MESSAGE value="Events in dashboard" />
+    <option name="LAST_COMMIT_MESSAGE" value="Events in dashboard" />
   </component>
   <component name="WindowStateProjectService">
     <state x="490" y="27" key="CommitChangelistDialog2" />
