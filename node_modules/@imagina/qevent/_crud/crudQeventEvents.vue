@@ -139,9 +139,10 @@
             address:{
               props: {
                 label: this.$tr('ui.form.address'),
+                type: 'text'
               },
               value: '',
-              type: 'text',
+              type: 'input',
               isTranslatable: false,
             },
             status: {
